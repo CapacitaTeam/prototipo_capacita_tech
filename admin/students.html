@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Capacita Tech | Estudiantes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link href="../assets/images/favicon.ico" rel="icon" type="image/ico">
+
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/night-mode.css">
+    <link rel="stylesheet" href="../assets/css/framework.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/icons.css">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="admin-panel">
+
+        <!-- menu -->
+        <div class="page-menu">
+            <!-- btn close on small devices -->
+            <span class="btn-menu-close" uk-toggle="target: #wrapper ; cls: mobile-active"></span>
+            <!-- traiger btn -->
+            <span class="btn-menu-trigger" uk-toggle="target: .page-menu ; cls: menu-large"></span>
+
+            <!-- logo -->
+            <div class="logo uk-visible@s">
+                <a href="dashboard.html"> <i class=" uil-graduation-hat"></i> <span> Capacita Tech</span> </a>
+            </div>
+            <div class="page-menu-inner" data-simplebar>
+                <ul class="mt-0">
+                    <li><a href="dashboard.html"><i class="uil-home-alt"></i> <span> Dashboard</span></a> </li>
+                    <li><a href="courses.html"><i class="uil-youtube-alt"></i> <span> Cursos</span></a> </li>
+                    <li><a href="messages.html"><i class="uil-envelope-alt"></i> <span> Mensages</span></a> </li>
+                    <li><a href="students.html"><i class="uil-users-alt"></i> <span> Estudiantes</span></a> </li>
+                    <li><a href="instructures.html"><i class="uil-graduation-hat"></i> <span> Instructores</span></a>
+                    </li>
+                    <li><a href="catagories.html"><i class="uil-tag-alt"></i> <span> Caregorias</span></a> </li>
+                    <li><a href="#"><i class="uil-chart-line"></i> <span> Reportes</span></a> </li>
+                    <li><a href="#"><i class="uil-question-circle"></i> <span> Ayuda</span></a> </li>
+                </ul>
+
+                <ul data-submenu-title="Configuraciones">
+                    <li><a href="setting.html"><i class="uil-cog"></i> <span> General </span></a> </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- Header Container
+        ================================================== -->
+        <header class="header uk-light">
+
+            <div class="container">
+                <nav uk-navbar>
+
+                    <!-- left Side Content -->
+                    <div class="uk-navbar-left">
+
+                        <!-- menu icon -->
+                        <span class="mmenu-trigger" uk-toggle="target: #wrapper ; cls: mobile-active">
+                            <button class="hamburger hamburger--collapse" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </span>
+
+
+                        <!-- logo -->
+
+                        <div class="searchbox uk-visible@s">
+
+                            <input class="uk-search-input" type="search" placeholder="Buscar...">
+                            <button class="btn-searchbox"> </button>
+
+                        </div>
+                        <!-- Search box dropdown -->
+                        <div uk-dropdown="pos: top;mode:click;animation: uk-animation-slide-bottom-small"
+                            class="dropdown-search">
+                            <div class="erh BR9 MIw"
+                                style="top: -26px;position: absolute ; left: 24px;fill: currentColor;height: 24px;pointer-events: none;color: #f5f5f5;">
+                                <svg width="22" height="22">
+                                    <path d="M0 24 L12 12 L24 24"></path>
+                                </svg></div>
+                            <!-- User menu -->
+
+                            <ul class="dropdown-search-list">
+                                <li class="list-title">
+                                    Busquedas Recientes
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Nuevos cursos</a>
+                                </li>
+                                <li><a href="#">
+                                        Crear cursos </a>
+                                </li>
+                                <li><a href="#">
+                                        Categorias </a>
+                                </li>
+                                <li> <a href="#">
+                                        Nuevos libros actualizados</a>
+                                </li>
+                                <li class="menu-divider">
+                                <li><a href="#">
+                                        Cursos sobre multimedia</a>
+                                </li>
+                                <li> <a href="#">
+                                        Cursos sobre tecnologias</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                    <!--  Right Side Content   -->
+
+                    <div class="uk-navbar-right">
+
+
+                        <div class="header-widget">
+
+
+                            <!-- profile-icon-->
+
+                            <div class="dropdown-user-details">
+                                <div class="dropdown-user-avatar">
+                                    <img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                </div>
+                                <div class="dropdown-user-name">
+                                    Juan Perez <span>Administrador</span>
+                                </div>
+                            </div>
+
+
+                            <div uk-dropdown="pos: top-right ;mode:click" class="dropdown-notifications small">
+
+                                <!-- User menu -->
+
+                                <ul class="dropdown-user-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-material-outline-dashboard"></i> Dashboard</a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-bookmark"></i> Favoritos </a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-settings"></i> Configuracions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="night-mode" class="btn-night-mode">
+                                            <i class="icon-feather-moon"></i> Modo Oscuro
+                                            <span class="btn-night-mode-switch">
+                                                <span class="uk-switch-button"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <ul class="menu-divider">
+                                        <li><a href="#">
+                                                <i class="icon-feather-help-circle"></i> Ayuda</a>
+                                        </li>
+                                        <li><a href="../index.html">
+                                                <i class="icon-feather-log-out"></i> Sing Out</a>
+                                        </li>
+                                    </ul>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- icon search-->
+                        <a class="uk-navbar-toggle uk-hidden@s"
+                            uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#">
+                            <i class="uil-search icon-small"></i>
+                        </a>
+                        <!-- User icons -->
+                        <span class="uil-user icon-small uk-hidden@s"
+                            uk-toggle="target: .header-widget ; cls: is-active">
+                            </spanc>
+
+                    </div>
+                    <!-- End Right Side Content / End -->
+
+
+                </nav>
+
+            </div>
+            <!-- container  / End -->
+
+        </header>
+
+        <!-- content -->
+        <div class="page-content">
+            <div class="page-content-inner">
+
+                <div class="d-flex">
+                    <nav id="breadcrumbs" class="mb-3">
+                        <ul>
+                            <li><a href="#"> <i class="uil-home-alt"></i> </a></li>
+                            <li><a href="#"> Estudiantes </a></li>
+                            <li>Lista</li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+
+
+                <div class="card">
+                    <!-- Card header -->
+                    <div class="card-header actions-toolbar border-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="d-inline-block mb-0">Estudiantes</h4>
+                            <div class="d-flex">
+
+                                <a href="#" class="btn btn-icon btn-hover  btn-circle" uk-tooltip="Buscar">
+                                    <i class="uil-search"></i>
+                                </a>
+                                <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1">
+                                        <input class="uk-search-input shadow-0 uk-form-small" type="search"
+                                            placeholder="Buscar..." autofocus>
+                                    </form>
+                                </div>
+
+                                <a href="#" class="btn btn-icon btn-hover  btn-circle" uk-tooltip="Filtro">
+                                    <i class="uil-filter"></i>
+                                </a>
+                                <div uk-dropdown="pos: bottom-right ; mode: click ;animation: uk-animation-scale-up">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li class="uk-active"><a href="#"> Recientes </a></li>
+                                        <li><a href="#">De A-Z</a></li>
+                                        <li><a href="#">De Z-A</a></li>
+                                    </ul>
+                                </div>
+
+
+                                <a href="#" class="btn btn-icon btn-hover  btn-circle" uk-tooltip="Mas">
+                                    <i class="uil-ellipsis-h"></i>
+                                </a>
+                                <div uk-dropdown="pos: bottom-right ; mode: click ;animation: uk-animation-scale-up">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <li><a href="#"> Recargar </a></li>
+                                        <li><a href="#">Administrar</a></li>
+                                        <li><a href="#">Configuracion</a></li>
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Table -->
+                    <div class="table-responsive">
+                        <table class="table align-items-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Creado</th>
+                                    <th scope="col">Cursos</th>
+                                    <th scope="col">Evaluaciones</th>
+                                    <th scope="col">Actividad</th>
+                                    <th scope="col"> </th>
+                                </tr>
+                            </thead>
+                            <tbody class="list">
+                                <tr>
+                                    <th scope="row">
+                                        <div class="media align-items-center">
+                                            <div>
+                                                <div class="avatar-parent-child" style="width: max-content">
+                                                    <img alt="Image placeholder"
+                                                        src="../assets/images/avatars/home-profile.jpg"
+                                                        class="avatar  rounded-circle">
+                                                    <span class="avatar-child avatar-badge bg-success"></span>
+                                                </div>
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <a href="#" class="name h6 mb-0 text-sm">Stella Johnson</a>
+                                                <small class="d-block font-weight-bold">#1001</small>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td> 10/05/2020 </td>
+                                    <td> 15 </td>
+                                    <td> 4 </td>
+                                    <td>
+                                        <div class="progress" style="height: 7px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 45%;"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <!-- Actions -->
+                                        <div class="actions ml-3">
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Ver">
+                                                <i class="uil-external-link-alt "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Editar">
+                                                <i class="uil-pen "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Borrar">
+                                                <i class="uil-trash-alt text-danger"></i> </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="media align-items-center">
+                                            <div>
+                                                <div class="avatar-parent-child">
+                                                    <img alt="Image placeholder"
+                                                        src="../assets/images/avatars/home-profile.jpg"
+                                                        class="avatar  rounded-circle">
+                                                    <span class="avatar-child avatar-badge bg-light"></span>
+                                                </div>
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <a href="#" class="name h6 mb-0 text-sm">Jonathan Madano</a>
+                                                <small class="d-block font-weight-bold">#1002</small>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td> 31/02/2020 </td>
+                                    <td> 17 </td>
+                                    <td> 10 </td>
+                                    <td>
+                                        <div class="progress" style="height: 7px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <!-- Actions -->
+                                        <div class="actions ml-3">
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Ver">
+                                                <i class="uil-external-link-alt "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Editar">
+                                                <i class="uil-pen "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Borrar">
+                                                <i class="uil-trash-alt text-danger"></i> </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="media align-items-center">
+                                            <div>
+                                                <div class="avatar-parent-child">
+                                                    <img alt="Image placeholder"
+                                                        src="../assets/images/avatars/home-profile.jpg"
+                                                        class="avatar  rounded-circle">
+                                                    <span class="avatar-child avatar-badge bg-light"></span>
+                                                </div>
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <a href="#" class="name h6 mb-0 text-sm">Alex Dolgove</a>
+                                                <small class="d-block font-weight-bold">#1003</small>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td> 31/09/2019 </td>
+                                    <td> 35 </td>
+                                    <td> 13 </td>
+                                    <td>
+                                        <div class="progress" style="height: 7px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 55%;"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <!-- Actions -->
+                                        <div class="actions ml-3">
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Ver">
+                                                <i class="uil-external-link-alt "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Editar">
+                                                <i class="uil-pen "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Borrar">
+                                                <i class="uil-trash-alt text-danger"></i> </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="media align-items-center">
+                                            <div>
+                                                <div class="avatar-parent-child">
+                                                    <img alt="Image placeholder"
+                                                        src="../assets/images/avatars/home-profile.jpg"
+                                                        class="avatar  rounded-circle">
+                                                    <span class="avatar-child avatar-badge bg-success"></span>
+                                                </div>
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <a href="#" class="name h6 mb-0 text-sm">Adrian Mohani</a>
+                                                <small class="d-block font-weight-bold">#1004</small>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td> 31/09/2019 </td>
+                                    <td> 22 </td>
+                                    <td> 3 </td>
+                                    <td>
+                                        <div class="progress" style="height: 7px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <!-- Actions -->
+                                        <div class="actions ml-3">
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Ver">
+                                                <i class="uil-external-link-alt "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Editar">
+                                                <i class="uil-pen "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Borrar">
+                                                <i class="uil-trash-alt text-danger"></i> </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="media align-items-center">
+                                            <div>
+                                                <div class="avatar-parent-child">
+                                                    <img alt="Image placeholder"
+                                                        src="../assets/images/avatars/home-profile.jpg"
+                                                        class="avatar  rounded-circle">
+                                                    <span class="avatar-child avatar-badge bg-success"></span>
+                                                </div>
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <a href="#" class="name h6 mb-0 text-sm"> John Sullivan</a>
+                                                <small class="d-block font-weight-bold">#1005</small>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td> 31/02/2019 </td>
+                                    <td> 253 </td>
+                                    <td> 20 </td>
+                                    <td>
+                                        <div class="progress" style="height: 7px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 65%;"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <!-- Actions -->
+                                        <div class="actions ml-3">
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Ver">
+                                                <i class="uil-external-link-alt "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Editar">
+                                                <i class="uil-pen "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Borrar">
+                                                <i class="uil-trash-alt text-danger"></i> </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="media align-items-center">
+                                            <div>
+                                                <div class="avatar-parent-child">
+                                                    <img alt="Image placeholder"
+                                                        src="../assets/images/avatars/home-profile.jpg"
+                                                        class="avatar  rounded-circle">
+                                                    <span class="avatar-child avatar-badge bg-success"></span>
+                                                </div>
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <a href="#" class="name h6 mb-0 text-sm">Stella Johnson</a>
+                                                <small class="d-block font-weight-bold">#1001</small>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td> 10/09/2018 </td>
+                                    <td> 15 </td>
+                                    <td> 5</td>
+                                    <td>
+                                        <div class="progress" style="height: 7px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 45%;"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <!-- Actions -->
+                                        <div class="actions ml-3">
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Ver">
+                                                <i class="uil-external-link-alt "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Editar">
+                                                <i class="uil-pen "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Borrar">
+                                                <i class="uil-trash-alt text-danger"></i> </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="media align-items-center">
+                                            <div>
+                                                <div class="avatar-parent-child">
+                                                    <img alt="Image placeholder"
+                                                        src="../assets/images/avatars/home-profile.jpg"
+                                                        class="avatar  rounded-circle">
+                                                    <span class="avatar-child avatar-badge bg-light"></span>
+                                                </div>
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <a href="#" class="name h6 mb-0 text-sm">Jonathan Madano</a>
+                                                <small class="d-block font-weight-bold">#1002</small>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td> 31/09/2018 </td>
+                                    <td> 17 </td>
+                                    <td> 8 </td>
+                                    <td>
+                                        <div class="progress" style="height: 7px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <!-- Actions -->
+                                        <div class="actions ml-3">
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Ver">
+                                                <i class="uil-external-link-alt "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Editar">
+                                                <i class="uil-pen "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Borrar">
+                                                <i class="uil-trash-alt text-danger"></i> </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="media align-items-center">
+                                            <div>
+                                                <div class="avatar-parent-child">
+                                                    <img alt="Image placeholder"
+                                                        src="../assets/images/avatars/home-profile.jpg"
+                                                        class="avatar  rounded-circle">
+                                                    <span class="avatar-child avatar-badge bg-light"></span>
+                                                </div>
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <a href="#" class="name h6 mb-0 text-sm">Alex Dolgove</a>
+                                                <small class="d-block font-weight-bold">#1003</small>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td> 31/09/2018 </td>
+                                    <td> 35 </td>
+                                    <td> 15 </td>
+                                    <td>
+                                        <div class="progress" style="height: 7px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 55%;"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <!-- Actions -->
+                                        <div class="actions ml-3">
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Ver">
+                                                <i class="uil-external-link-alt "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Editar">
+                                                <i class="uil-pen "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Borrar">
+                                                <i class="uil-trash-alt text-danger"></i> </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="media align-items-center">
+                                            <div>
+                                                <div class="avatar-parent-child">
+                                                    <img alt="Image placeholder"
+                                                        src="../assets/images/avatars/home-profile.jpg"
+                                                        class="avatar  rounded-circle">
+                                                    <span class="avatar-child avatar-badge bg-success"></span>
+                                                </div>
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <a href="#" class="name h6 mb-0 text-sm">Adrian Mohani</a>
+                                                <small class="d-block font-weight-bold">#1004</small>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td> 31/09/2018 </td>
+                                    <td> 22 </td>
+                                    <td> 30 </td>
+                                    <td>
+                                        <div class="progress" style="height: 7px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <!-- Actions -->
+                                        <div class="actions ml-3">
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Ver">
+                                                <i class="uil-external-link-alt "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Editar">
+                                                <i class="uil-pen "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Borrar">
+                                                <i class="uil-trash-alt text-danger"></i> </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="media align-items-center">
+                                            <div>
+                                                <div class="avatar-parent-child">
+                                                    <img alt="Image placeholder"
+                                                        src="../assets/images/avatars/home-profile.jpg"
+                                                        class="avatar  rounded-circle">
+                                                    <span class="avatar-child avatar-badge bg-success"></span>
+                                                </div>
+                                            </div>
+                                            <div class="media-body ml-4">
+                                                <a href="#" class="name h6 mb-0 text-sm"> John Sullivan</a>
+                                                <small class="d-block font-weight-bold">#1005</small>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td> 31/02/2018 </td>
+                                    <td> 253 </td>
+                                    <td> 17 </td>
+                                    <td>
+                                        <div class="progress" style="height: 7px;">
+                                            <div class="progress-bar" role="progressbar" style="width: 65%;"></div>
+                                        </div>
+                                    </td>
+                                    <td class="text-right">
+                                        <!-- Actions -->
+                                        <div class="actions ml-3">
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Ver">
+                                                <i class="uil-external-link-alt "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Editar">
+                                                <i class="uil-pen "></i> </a>
+                                            <a href="#" class="btn btn-icon btn-hover btn-sm btn-circle"
+                                                uk-tooltip="Borrar">
+                                                <i class="uil-trash-alt text-danger"></i> </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+                <!-- footer
+                ================================================== -->
+
+            </div>
+
+        </div>
+
+        <!-- For Night mode -->
+        <script>
+            (function (window, document, undefined) {
+                'use strict';
+                if (!('localStorage' in window)) return;
+                var nightMode = localStorage.getItem('gmtNightMode');
+                if (nightMode) {
+                    document.documentElement.className += ' night-mode';
+                }
+            })(window, document);
+
+
+            (function (window, document, undefined) {
+
+                'use strict';
+
+                // Feature test
+                if (!('localStorage' in window)) return;
+
+                // Get our newly insert toggle
+                var nightMode = document.querySelector('#night-mode');
+                if (!nightMode) return;
+
+                // When clicked, toggle night mode on or off
+                nightMode.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    document.documentElement.classList.toggle('night-mode');
+                    if (document.documentElement.classList.contains('night-mode')) {
+                        localStorage.setItem('gmtNightMode', true);
+                        return;
+                    }
+                    localStorage.removeItem('gmtNightMode');
+                }, false);
+
+            })(window, document);
+        </script>
+
+
+        <!-- javaScripts
+    ================================================== -->
+        <script src="../assets/js/framework.js"></script>
+        <script src="../assets/js/jquery-3.3.1.min.js"></script>
+        <script src="../assets/js/simplebar.js"></script>
+        <script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1056 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Capacita Tech | Cursos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Courseplus - Professional Learning Management HTML Template">
+
+    <!-- Favicon -->
+    <link href="../assets/images/favicon.ico" rel="icon" type="image/ico">
+
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/night-mode.css">
+    <link rel="stylesheet" href="../assets/css/framework.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css"> 
+
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/icons.css">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+
+        <!-- Header Container
+        ================================================== -->
+        <header class="header header-transparent uk-light"
+            uk-sticky="top:20 ; cls-active:header-sticky ; cls-inactive: uk-light">
+
+            <div class="container">
+                <nav uk-navbar>
+
+                    <!-- left Side Content -->
+                    <div class="uk-navbar-left">
+
+                        <span class="btn-mobile" uk-toggle="target: #wrapper ; cls: mobile-active"></span>
+
+                        <!-- logo -->
+
+                        <!-- breadcrumbs -->
+                        <nav id="breadcrumbs">
+                            <ul>
+                                <li><a href="#"> Dashboard </a></li>
+                                <li><a href="#">Cursos</a></li>
+                                <li>Resumen</li>
+                            </ul>
+                        </nav>
+
+
+                    </div>
+
+
+                    <!--  Right Side Content   -->
+
+                    <div class="uk-navbar-right">
+
+                        <div class="header-widget">
+                            <!-- User icons close mobile-->
+                            <span class="icon-feather-x icon-small uk-hidden@s"
+                                uk-toggle="target: .header-widget ; cls: is-active"> </span>
+
+                            <!-- profile-icon-->
+
+                            <a href="#" class="header-widget-icon profile-icon">
+                                <img src="../assets/images/avatars/home-profile.jpg" alt="" class="header-profile-icon">
+                            </a>
+
+                            <div uk-dropdown="pos: top-right ;mode:click" class="dropdown-notifications small">
+
+                                <!-- User Name / Avatar -->
+                                <a href="#">
+
+                                    <div class="dropdown-user-details">
+                                        <div class="dropdown-user-avatar">
+                                            <img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                        </div>
+                                        <div class="dropdown-user-name">
+                                            Juan Perez <span>Estudiante</span>
+                                        </div>
+                                    </div>
+
+                                </a>
+
+                                <!-- User menu -->
+
+                                <ul class="dropdown-user-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-material-outline-dashboard"></i> Dashboard</a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-bookmark"></i> Favoritos </a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-settings"></i> Configuracion</a>
+                                    </li>
+                                   
+                                    <li class="menu-divider">
+                                    
+                                    <li><a href="../index.html">
+                                            <i class="icon-feather-log-out"></i> Salir</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <!-- End Right Side Content / End -->
+
+
+                </nav>
+
+            </div>
+            <!-- container  / End -->
+
+        </header>
+
+        <!-- overlay seach on mobile-->
+        <div class="nav-overlay uk-navbar-left uk-position-relative uk-flex-1 bg-grey uk-light p-2" hidden
+            style="z-index: 10000;">
+            <div class="uk-navbar-item uk-width-expand" style="min-height: 60px;">
+                <form class="uk-search uk-search-navbar uk-width-1-1">
+                    <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                </form>
+            </div>
+            <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade"
+                href="#"></a>
+        </div>
+
+        <!-- search overlay-->
+        <div id="searchbox">
+
+            <div class="search-overlay"></div>
+
+            <div class="search-input-wrapper">
+                <div class="search-input-container">
+                    <div class="search-input-control">
+                        <span class="icon-feather-x btn-close uk-animation-scale-up"
+                            uk-toggle="target: #searchbox; cls: is-active"></span>
+                        <div class=" uk-animation-slide-bottom">
+                            <input type="text" name="search" autofocus required>
+                            <p class="search-help">Type the name of the Course and book you are looking for</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- side nav-->
+        <div class="side-nav uk-animation-slide-left-medium">
+
+            <div class="side-nav-bg"></div>
+
+            <!-- logo -->
+            <div class="logo uk-visible@s">
+                <a href="dashboard.html">
+                    <img src="../assets/images/logo_without_text.svg" alt="">
+                </a>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#"> <i class="uil-play-circle"></i> </a>
+                    <div class="side-menu-slide">
+                        <div class="side-menu-slide-content">
+                            <ul data-simplebar>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-brush-alt "></i> Sitios Web </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-android-alt"></i>Applicacione </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-bag-alt"></i> Negocios </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-window"></i> Tecnologia </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-palette"></i> Diseños </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-megaphone"></i> Publicidad </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-life-ring"></i> Estilo de vida </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class=" uil-camera"></i> Forografia </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-medkit"></i> Salud </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-music"></i> Musica </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-shopping-cart-alt"></i> Ecommerce
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-utensils-alt "></i> Comida </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-lightbulb-alt"></i> Enseñanza </a>
+                                </li>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!-- book -->
+                    <a href="book.html"> <i class="uil-book-alt"></i> <span class="tooltips"> Libros</span> </a>
+                </li>
+                <li>
+                    <!-- Episodes -->
+                    <a href="episode.html"> <i class="uil-youtube-alt"></i> <span class="tooltips"> Episodios</span></a>
+                </li>
+
+            </ul>
+            <ul class="uk-position-bottom">
+                <li>
+                    <!-- Lunch information box -->
+                    <a href="#">
+                        <i class="uil-paint-tool"></i>
+                    </a>
+                    <div uk-drop="pos: right-bottom ;mode:click ; offset: 10;animation: uk-animation-slide-right-small">
+                        <div class="uk-card-default rounded p-0">
+                            <h5 class="mb-0 p-3 px-4  bg-light"> Modo Oscuro</h5>
+                            <div class="p-3 px-4">
+                                <p> Deslice el interruptor para cambiar entre apariencias</p>
+                                <div class="uk-flex">
+                                    <p class="uk-text-small text-muted">Tema Oscuro</p>
+                                    <!-- night mode button -->
+                                    <span href="#" id="night-mode" class="btn-night-mode">
+                                        <label class="btn-night-mode-switch">
+                                            <span class="uk-switch-button"></span>
+                                        </label>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- content -->
+        <div class="page-content pt-lg-5">
+
+
+            <div class="course-resume-wrapper topic-1">
+                <div class="container">
+
+                    <div class="uk-grid-large uk-light mt-lg-3" uk-grid>
+
+                        <div class="uk-width-1-2@m">
+                            <div class="course-thumbnail m-lg-4 p-lg-3">
+                                <img src="../assets/images/home-hero.png" alt="">
+                                <a class="play-button-trigger show" href="#trailer-modal" uk-toggle> </a>
+                            </div>
+
+                            <!-- video demo model -->
+                            <div id="trailer-modal" uk-modal>
+                                <div class="uk-modal-dialog">
+                                    <button class="uk-modal-close-default mt-2  mr-1" type="button" uk-close></button>
+                                    <div class="uk-modal-header">
+                                        <h4> Video </h4>
+                                    </div>
+                                    <div class="video-responsive">
+                                        <iframe src="https://www.youtube.com/embed/nOCXXHGMezU"
+                                            class="uk-padding-remove" uk-video="automute: true" frameborder="0"
+                                            allowfullscreen uk-responsive></iframe>
+                                    </div>
+
+                                    <div class="uk-modal-body">
+                                        <h3>Publicidad </h3>
+                                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                            eu
+                                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                                            in
+                                            culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="uk-width-1-2@m course-details">
+                            <h2>Publicidad</h2>
+                            <p> Aprende a como dar publicidad a tu negocio mediante el uso de herramientas nuevas, ademas aprende a como llegar a mas personas
+                                mediante el uso de redes sociales mas polulares en el mundo digital.
+                            </p>
+
+                            <div class="course-details-info mt-5">
+                                <ul>
+                                    <li>
+                                        <div class="star-rating"><span class="avg"> 4.9 </span> <span
+                                                class="star"></span><span class="star"></span><span
+                                                class="star"></span><span class="star"></span><span class="star"></span>
+                                        </div>
+                                    </li>
+                                    <li> <i class="icon-feather-users"></i> 1200 Inscritos </li>
+                                </ul>
+                            </div>
+                            <div class="course-details-info">
+
+                                <ul>
+                                    <li> Creado por <a href="#"> Maria Morales </a> </li>
+                                    <li> Ultima Actualizacion 07/2020</li>
+                                    <li> Español </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="uk-flex uk-flex-between uk-flex-middle">
+                                <div class=" uk-visible@m">
+                                    <a hred="#" uk-tooltip="title: Agregar a tus favoritos ; pos: top">
+                                        <i class="icon-feather-bookmark icon-small"></i> </a>
+                                    <a hred="#" uk-tooltip="title: Agregar a tu lista ; pos: top">
+                                        <i class="icon-feather-heart icon-small ml-3 text-danger"></i> </a>
+                                </div>
+                                <a href="course-lesson-1.html" class="btn-course-start-2 my-lg-4 mt-3"> Iniciar curso
+                                    <i class="icon-feather-chevron-right"></i> </a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="subnav">
+
+                        <ul class="uk-child-width-expand mb-0"
+                            uk-switcher="connect: #course-intro-tab ;animation: uk-animation-slide-right-medium, uk-animation-slide-left-medium"
+                            uk-tab>
+                            <li><a href="#"> <i class="uil-file-alt"></i>
+                                    <span> Descripcion</span> </a>
+                            </li>
+                            <li><a href="#"> <i class="uil-film"></i>
+                                    <span> Contenido</span></a>
+                            </li>
+                            <li><a href="#"> <i class="uil-comment-lines"></i>
+                                    <span> Preguntas</span></a>
+                            </li>
+                            <li><a href="#"> <i class="uil-envelope-info"></i>
+                                    <span> Anuncio</span></a>
+                            </li>
+                            <li><a href="#"> <i class="uil-star"></i>
+                                    <span> Reseñas</span></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div class="uk-grid-large mt-4" uk-grid>
+                    <div class="uk-width-2-3@m">
+                        <ul id="course-intro-tab" class="uk-switcher">
+
+                            <!-- course description -->
+                            <li class="course-description-content">
+
+                                <h4> Descripcion </h4>
+                                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                                    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                    minim laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+                                    quis
+                                    nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                                    commodo
+                                    consequat</p>
+                                <p> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                                    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                                    exerci</p>
+
+
+                                <h4> Lo que aprenderas </h3>
+                                    <div class="uk-child-width-1-2@s" uk-grid>
+                                        <div>
+                                            <ul class="list-2">
+                                                <li>Edicion de imagenes</li>
+                                                <li>Edicion de videos</li>
+                                                <li>Creacion de logotipos</li>
+                                                <li>Patrones de diseños</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="list-2">
+                                                <li>Tecnicas para captar la atencion</li>
+                                                <li>Publicar eficientemente en redes sociales</li>
+                                                <li>Obtener retroalimentacion</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <h4> Requerimientos </h4>
+                                    <ul class="list-1">
+                                        <li>Uso de computadores: Windows, macOS o Linux</li>
+                                        <li>Conocimiento basico de redes sociales</li>
+                                        <li>Basico/Minimo conocimiento sobre edicion de imagenes o videos</li>
+                                    </ul>
+
+                                    <h4> Aqui esta exactamente lo que cubriremos en este curso: </h4>
+                                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                        nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                                        enim ad
+                                        minim laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                                        veniam,
+                                        quis
+                                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                                        commodo
+                                        consequat</p>
+
+                                    <p> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                        laoreet
+                                        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                                        nostrud
+                                        exerci</p>
+
+                                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                        nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                                        enim ad
+                                        minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                                        ut
+                                        aliquip ex ea commodo consequat. Nam liber tempor cum soluta nobis eleifend
+                                        option
+                                        congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+                                        Lorem
+                                        ipsum
+                                        dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                        minim
+                                        veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                                        aliquip
+                                        ex
+                                        ea commodo consequat.</p>
+
+
+                            </li>
+
+                            <!-- course Curriculum-->
+                            <li>
+
+                                <ul class="course-curriculum" uk-accordion="multiple: true">
+
+                                    <li class="uk-open">
+                                        <a class="uk-accordion-title" href="#"> Introduccion </a>
+                                        <div class="uk-accordion-content">
+
+                                            <!-- course-video-list -->
+                                            <ul class="course-curriculum-list">
+                                                <li> Que es publicidad <span> 23 min </span>
+                                                <li> Que son las redes sociales <span> 23 min </span> </li>
+                                                <li> Tu primera publicacion <a href="#trailer-modal" uk-toggle> vista previa
+                                                    </a> <span> 23 min </span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a class="uk-accordion-title" href="#"> Tu primera publicidad </a>
+                                        <div class="uk-accordion-content">
+
+                                            <!-- course-video-list -->
+                                            <ul class="course-curriculum-list">
+                                                <li> Inicios <span> 23 min </span>
+                                                <li> Explorando redes sociales <span> 23 min </span> </li>
+                                                <li> Creando contedido <a href="#trailer-modal" uk-toggle>
+                                                        vista previa
+                                                    </a> <span> 23 min
+                                                    </span>
+                                                </li>
+                                                <li> Formulario de retroalimentacion <span> 23 min </span> </li>
+                                                <li> Vista previa de los resultados <span> 23 min </span> </li>
+                                            </ul>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a class="uk-accordion-title" href="#"> Edicion de multimedia  </a>
+                                        <div class="uk-accordion-content">
+
+                                            <!-- course-video-list -->
+                                            <ul class="course-curriculum-list">
+                                                <li> Esicion de Imagenes <span> 23 min </span> </li>
+                                                <li> Edicion de Videos <a href="#trailer-modal" uk-toggle> vista previa </a>
+                                                    <span> 23 min </span> </li>
+                                                <li> Tecnicas para captar mas personas <span> 23 min </span> </li>
+                                                <li> Publicar Multimedia <span> 23 min </span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a class="uk-accordion-title" href="#"> Publicaciones avanzadas </a>
+                                        <div class="uk-accordion-content">
+
+                                            <!-- course-video-list -->
+                                            <ul class="course-curriculum-list">
+                                                <li> Creacion de cuentas empresariales<span> 23 min </span> </li>
+                                                <li> Campañas de publicidad <span> 23 min </span> </li>
+                                                <li> Distribucion de la publicidad (Target) <a href="#trailer-modal" uk-toggle> vista previa
+                                                    </a><span> 23 min </span> </li>
+                                                <li> Algunas cosas importantes <span> 23 min </span> </li>
+                                            </ul>
+
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <!-- course Faq-->
+                            <li>
+
+                                <h4 class="my-4"> Preguntas y respuestas</h4>
+
+                                <ul class="course-faq" uk-accordion>
+
+                                    <li class="uk-open">
+                                        <a class="uk-accordion-title" href="#"> Introduccion </a>
+                                        <div class="uk-accordion-content">
+                                            <p> La principal meta de esta gia de incio es conocer el entorno en el cual vamos a hacer nuestras publicaciones </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a class="uk-accordion-title" href="#"> Tu primera publicidad</a>
+                                        <div class="uk-accordion-content">
+                                            <p> Crear tus propias publicaciones</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a class="uk-accordion-title" href="#"> Edicion de multimedia </a>
+                                        <div class="uk-accordion-content">
+                                            <p> Aprender a hacer ediciones para publicaciones en redes sociales. </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a class="uk-accordion-title" href="#"> Publicaciones avanzadas </a>
+                                        <div class="uk-accordion-content">
+                                            <p> Obtener estadisticas de tus publicaciones y a quienes va dirigidas. </p>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <!-- course Announcement-->
+                            <li>
+                                <h4> Anuncio </h4>
+
+                                <div class="user-details-card">
+                                    <div class="user-details-card-avatar">
+                                        <img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                    </div>
+                                    <div class="user-details-card-name">
+                                        Maria Morales <span> Instructora <span> hace un año </span> </span>
+                                    </div>
+                                </div>
+
+
+
+                                <article class="uk-article">
+
+                                    <p class="lead"> Nam liber tempor cum soluta nobis eleifend option
+                                        congue  imperdiet doming id quod mazim placerat facer possim assum.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                        tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                        aute
+                                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                        nulla
+                                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                        officia
+                                        deserunt mollit anim id est laborum.</p>
+
+                                    <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                        nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                                        enim ad
+                                        minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                                        ut
+                                        aliquip ex ea commodo consequat. Nam liber tempor cum soluta nobis eleifend
+                                        option congue nihil imperdiet doming id quod mazim placerat facer possim
+                                        assum.
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                                        nibh
+                                        euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                                        enim ad
+                                        minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+                                        ut
+                                        aliquip ex ea commodo consequat.</p>
+
+
+                                </article>
+                            </li>
+
+                            <!-- course Reviews-->
+                            <li>
+
+                                <div class="review-summary">
+                                    <h4 class="review-summary-title"> Reseña del estudiante </h4>
+                                    <div class="review-summary-container">
+                                        <div class="review-summary-avg">
+                                            <div class="avg-number">
+                                                4.8
+                                            </div>
+                                            <div class="review-star">
+                                                <div class="star-rating"><span class="star"></span><span
+                                                        class="star"></span><span class="star"></span><span
+                                                        class="star"></span><span class="star half"></span></div>
+                                            </div>
+                                            <span>Rango del curso</span>
+                                        </div>
+
+
+                                        <div class="review-summary-rating">
+                                            <div class="review-summary-rating-wrap">
+                                                <div class="review-bars">
+                                                    <div class="full_bar">
+                                                        <div class="bar_filler" style="width:95%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="review-stars">
+                                                    <div class="star-rating"><span class="star"></span><span
+                                                            class="star"></span><span class="star"></span><span
+                                                            class="star"></span><span class="star"></span></div>
+                                                </div>
+                                                <div class="review-avgs">
+                                                    95 %
+                                                </div>
+                                            </div>
+                                            <div class="review-summary-rating-wrap">
+                                                <div class="review-bars">
+                                                    <div class="full_bar">
+                                                        <div class="bar_filler" style="width:80%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="review-stars">
+                                                    <div class="star-rating"><span class="star"></span><span
+                                                            class="star"></span><span class="star"></span><span
+                                                            class="star"></span><span class="star empty"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="review-avgs">
+                                                    80 %
+                                                </div>
+                                            </div>
+                                            <div class="review-summary-rating-wrap">
+                                                <div class="review-bars">
+                                                    <div class="full_bar">
+                                                        <div class="bar_filler" style="width:60%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="review-stars">
+                                                    <div class="star-rating"><span class="star"></span><span
+                                                            class="star"></span><span class="star"></span><span
+                                                            class="star empty"></span><span class="star empty"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="review-avgs">
+                                                    60 %
+                                                </div>
+                                            </div>
+                                            <div class="review-summary-rating-wrap">
+                                                <div class="review-bars">
+                                                    <div class="full_bar">
+                                                        <div class="bar_filler" style="width:45%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="review-stars">
+                                                    <div class="star-rating"><span class="star"></span><span
+                                                            class="star"></span><span class="star empty"></span><span
+                                                            class="star empty"></span><span class="star empty"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="review-avgs">
+                                                    45 %
+                                                </div>
+                                            </div>
+                                            <div class="review-summary-rating-wrap">
+                                                <div class="review-bars">
+                                                    <div class="full_bar">
+                                                        <div class="bar_filler" style="width:25%"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="review-stars">
+                                                    <div class="star-rating"><span class="star"></span><span
+                                                            class="star empty"></span><span
+                                                            class="star empty"></span><span
+                                                            class="star empty"></span><span class="star empty"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="review-avgs">
+                                                    25 %
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="comments">
+                                    <h4>Reseñas <span class="comments-amount"> (4610) </span> </h4>
+
+                                    <ul>
+                                        <li>
+                                            <div class="comments-avatar"><img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="comment-by">Stella Johnson<span>Estudiante</span>
+                                                    <div class="comment-stars">
+                                                        <div class="star-rating"><span class="star"></span><span
+                                                                class="star"></span><span class="star"></span><span
+                                                                class="star"></span><span class="star"></span></div>
+                                                    </div>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                    diam
+                                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                                                    erat
+                                                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                                                    tation
+                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                                    consequat.
+                                                </p>
+                                                <div class="comment-footer">
+                                                    <span> Fue de ayuda esta reseña ? </span>
+                                                    <button> Si </button>
+                                                    <button> No </button>
+                                                    <a href="#"> Reportar</a>
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+                                            <div class="comments-avatar"><img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="comment-by"> Adrian Mohani <span>Instructor </span>
+                                                    <div class="comment-stars">
+                                                        <div class="star-rating"><span class="star"></span><span
+                                                                class="star"></span><span class="star"></span><span
+                                                                class="star"></span><span class="star half"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p> Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                                                    ullamcorper
+                                                    suscipit lobortis nisl ut aliquip ex ea commodo consequat. Nam
+                                                    liber
+                                                    tempor cum soluta nobis eleifend
+                                                </p>
+                                                <div class="comment-footer">
+                                                    <span> Fue de ayuda esta reseña ? </span>
+                                                    <button> Si </button>
+                                                    <button> No </button>
+                                                    <a href="#"> Reportar</a>
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+                                            <div class="comments-avatar"><img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="comment-by"> Adrian Mohani <span>Estudiante</span>
+                                                    <div class="comment-stars">
+                                                        <div class="star-rating"><span class="star"></span><span
+                                                                class="star"></span><span class="star"></span><span
+                                                                class="star"></span><span class="star"></span></div>
+                                                    </div>
+                                                </div>
+                                                <p> Nam liber tempor cum soluta nobis eleifend option congue nihil
+                                                    imperdiet doming id quod mazim placerat facer possim assum.
+                                                    Lorem
+                                                    ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                                    nonummy
+                                                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+                                                    volutpat.
+                                                </p>
+                                                <div class="comment-footer">
+                                                    <span> Fue de ayuda esta reseña ? </span>
+                                                    <button> Si </button>
+                                                    <button> No </button>
+                                                    <a href="#"> Reportar</a>
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+                                            <div class="comments-avatar"><img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                            </div>
+                                            <div class="comment-content">
+                                                <div class="comment-by">Stella Johnson<span>Estudiante</span>
+                                                    <div class="comment-stars">
+                                                        <div class="star-rating"><span class="star"></span><span
+                                                                class="star"></span><span class="star"></span><span
+                                                                class="star"></span><span class="star"></span></div>
+                                                    </div>
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                                    diam
+                                                    nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                                                    erat
+                                                    volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                                                    tation
+                                                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                                                    consequat.
+                                                </p>
+                                                <div class="comment-footer">
+                                                    <span> Fue de ayuda esta reseña ? </span>
+                                                    <button> Si </button>
+                                                    <button> No </button>
+                                                    <a href="#"> Reportar</a>
+                                                </div>
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="comments">
+                                    <h3>Enviar reseña </h3>
+                                    <ul>
+                                        <li>
+                                            <div class="comments-avatar"><img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                            </div>
+                                            <div class="comment-content">
+                                                <form class="uk-grid-small" uk-grid>
+                                                    <div class="uk-width-1-2@s">
+                                                        <label class="uk-form-label">Nombre</label>
+                                                        <input class="uk-input" type="text" placeholder="Nombre">
+                                                    </div>
+                                                    <div class="uk-width-1-2@s">
+                                                        <label class="uk-form-label">Correo</label>
+                                                        <input class="uk-input" type="text" placeholder="Correo">
+                                                    </div>
+                                                    <div class="uk-width-1-1@s">
+                                                        <label class="uk-form-label">Commentario</label>
+                                                        <textarea class="uk-textarea"
+                                                            placeholder="Escriba su comentario aqui..."
+                                                            style=" height:160px"></textarea>
+                                                    </div>
+                                                    <div class="uk-grid-margin">
+                                                        <input type="submit" value="Enviar" class="btn btn-default">
+                                                    </div>
+                                                </form>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                    <!-- sidebar -->
+                    <div class="uk-width-1-3@m">
+
+                        <h4 class="mt-lg-4"> Cursos Relacionados</h4>
+                        <div class="uk-child-width-1-1" uk-grid>
+                            <div>
+                                <a href="course-intro.html">
+                                    <div class="course-card">
+                                        <div class="course-card-thumbnail ">
+                                            <img src="../assets/images/course/teach2.jpg">
+                                            <span class="play-button-trigger"></span>
+                                        </div>
+                                        <div class="course-card-body">
+                                            <div class="course-card-info">
+                                                <div>
+                                                    <span class="catagroy">Enseñanza</span>
+                                                </div>
+                                                <div>
+                                                    <i class="icon-feather-bookmark icon-small"></i>
+                                                </div>
+                                            </div>
+                                            <h4>Aprende nuevas tecnicas </h4>
+                                            <p>Como captar la atencion de tus alumnos mediante ..</p>
+                                            <div class="course-card-footer">
+                                                <h5> <i class="icon-feather-film"></i> 12 Lecciones </h5>
+                                                <h5> <i class="icon-feather-clock"></i> 64 Horas </h5>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div>
+                                <a href="course-intro.html">
+                                    <div class="course-card">
+                                        <div class="course-card-thumbnail ">
+                                            <img src="../assets/images/course/multimedia.jpg">
+                                            <span class="play-button-trigger"></span>
+                                        </div>
+                                        <div class="course-card-body">
+                                            <div class="course-card-info">
+                                                <div>
+                                                    <span class="catagroy">Tips</span>
+                                                </div>
+                                                <div>
+                                                    <i class="icon-feather-bookmark icon-small"></i>
+                                                </div>
+                                            </div>
+                                            <h4>Edicion de Multimedia </h4>
+                                            <p> Aprende a como crear multimedia facil y repido.. </p>
+                                            <div class="course-card-footer">
+                                                <h5> <i class="icon-feather-film"></i> 9 Lecciones </h5>
+                                                <h5> <i class="icon-feather-clock"></i> 30 Horas </h5>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="course-intro.html">
+                                    <div class="course-card">
+                                        <div class="course-card-thumbnail ">
+                                            <img src="../assets/images/course/chef-cocina.jpg">
+                                            <span class="play-button-trigger"></span>
+                                        </div>
+                                        <div class="course-card-body">
+                                            <div class="course-card-info">
+                                                <div>
+                                                    <span class="catagroy">Cocina</span>
+                                                </div>
+                                                <div>
+                                                    <i class="icon-feather-bookmark icon-small"></i>
+                                                </div>
+                                            </div>
+
+                                            <h4>Tecnicas para cocinar </h4>
+                                            <p> Aprende tecnica de los chef profecionales.
+                                            </p>
+
+                                            <div class="course-card-footer">
+                                                <h5> <i class="icon-feather-film"></i> 10 Lecciones </h5>
+                                                <h5> <i class="icon-feather-clock"></i> 25 Horas </h5>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- footer
+               ================================================== -->
+                    
+                </div>
+
+            </div>
+
+            <!-- For Night mode -->
+            <script>
+                (function (window, document, undefined) {
+                    'use strict';
+                    if (!('localStorage' in window)) return;
+                    var nightMode = localStorage.getItem('gmtNightMode');
+                    if (nightMode) {
+                        document.documentElement.className += ' night-mode';
+                    }
+                })(window, document);
+
+
+                (function (window, document, undefined) {
+
+                    'use strict';
+
+                    // Feature test
+                    if (!('localStorage' in window)) return;
+
+                    // Get our newly insert toggle
+                    var nightMode = document.querySelector('#night-mode');
+                    if (!nightMode) return;
+
+                    // When clicked, toggle night mode on or off
+                    nightMode.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        document.documentElement.classList.toggle('night-mode');
+                        if (document.documentElement.classList.contains('night-mode')) {
+                            localStorage.setItem('gmtNightMode', true);
+                            return;
+                        }
+                        localStorage.removeItem('gmtNightMode');
+                    }, false);
+
+                })(window, document);
+            </script>
+
+
+            <!-- javaScripts
+            ================================================== -->
+            <script src="../assets/js/framework.js"></script>
+            <script src="../assets/js/jquery-3.3.1.min.js"></script>
+            <script src="../assets/js/simplebar.js"></script>
+            <script src="../assets/js/main.js"></script>
+            <script src="../assets/js/bootstrap-select.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Capacita Tech | Cursos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link href="../assets/images/favicon.ico" rel="icon" type="image/ico">
+
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/night-mode.css">
+    <link rel="stylesheet" href="../assets/css/framework.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/icons.css">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="admin-panel">
+
+        <!-- menu -->
+        <div class="page-menu">
+            <!-- btn close on small devices -->
+            <span class="btn-menu-close" uk-toggle="target: #wrapper ; cls: mobile-active"></span>
+            <!-- traiger btn -->
+            <span class="btn-menu-trigger" uk-toggle="target: .page-menu ; cls: menu-large"></span>
+
+            <!-- logo -->
+            <div class="logo uk-visible@s">
+                <a href="dashboard.html"> <i class=" uil-graduation-hat"></i> <span> Capacita Tech</span> </a>
+            </div>
+            <div class="page-menu-inner" data-simplebar>
+                <ul class="mt-0">
+                    <li><a href="dashboard.html"><i class="uil-home-alt"></i> <span> Dashboard</span></a> </li>
+                    <li><a href="courses.html"><i class="uil-youtube-alt"></i> <span> Cursos</span></a> </li>
+                    <li><a href="messages.html"><i class="uil-envelope-alt"></i> <span> Mensages</span></a> </li>
+                    <li><a href="students.html"><i class="uil-users-alt"></i> <span> Estudiantes</span></a> </li>
+                    <li><a href="instructures.html"><i class="uil-graduation-hat"></i> <span> Instructores</span></a>
+                    </li>
+                    <li><a href="catagories.html"><i class="uil-tag-alt"></i> <span> Caregorias</span></a> </li>
+                    <li><a href="#"><i class="uil-chart-line"></i> <span> Reportes</span></a> </li>
+                    <li><a href="#"><i class="uil-question-circle"></i> <span> Ayuda</span></a> </li>
+                </ul>
+
+                <ul data-submenu-title="Configuraciones">
+                    <li><a href="setting.html"><i class="uil-cog"></i> <span> General </span></a> </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- Header Container
+        ================================================== -->
+        <header class="header uk-light">
+
+            <div class="container">
+                <nav uk-navbar>
+
+                    <!-- left Side Content -->
+                    <div class="uk-navbar-left">
+
+                        <!-- menu icon -->
+                        <span class="mmenu-trigger" uk-toggle="target: #wrapper ; cls: mobile-active">
+                            <button class="hamburger hamburger--collapse" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </span>
+
+
+                        <!-- logo -->
+
+                        <div class="searchbox uk-visible@s">
+
+                            <input class="uk-search-input" type="search" placeholder="Buscar...">
+                            <button class="btn-searchbox"> </button>
+
+                        </div>
+                        <!-- Search box dropdown -->
+                        <div uk-dropdown="pos: top;mode:click;animation: uk-animation-slide-bottom-small"
+                            class="dropdown-search">
+                            <div class="erh BR9 MIw"
+                                style="top: -26px;position: absolute ; left: 24px;fill: currentColor;height: 24px;pointer-events: none;color: #f5f5f5;">
+                                <svg width="22" height="22">
+                                    <path d="M0 24 L12 12 L24 24"></path>
+                                </svg></div>
+                            <!-- User menu -->
+
+                            <ul class="dropdown-search-list">
+                                <li class="list-title">
+                                    Busquedas Recientes
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Nuevos cursos</a>
+                                </li>
+                                <li><a href="#">
+                                        Crear cursos </a>
+                                </li>
+                                <li><a href="#">
+                                        Categorias </a>
+                                </li>
+                                <li> <a href="#">
+                                        Nuevos libros actualizados</a>
+                                </li>
+                                <li class="menu-divider">
+                                <li><a href="#">
+                                        Cursos sobre multimedia</a>
+                                </li>
+                                <li> <a href="#">
+                                        Cursos sobre tecnologias</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                    <!--  Right Side Content   -->
+
+                    <div class="uk-navbar-right">
+
+
+                        <div class="header-widget">
+
+
+                            <!-- profile-icon-->
+
+                            <div class="dropdown-user-details">
+                                <div class="dropdown-user-avatar">
+                                    <img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                </div>
+                                <div class="dropdown-user-name">
+                                    Juan Perez <span>Administrador</span>
+                                </div>
+                            </div>
+
+
+                            <div uk-dropdown="pos: top-right ;mode:click" class="dropdown-notifications small">
+
+                                <!-- User menu -->
+
+                                <ul class="dropdown-user-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-material-outline-dashboard"></i> Dashboard</a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-bookmark"></i> Favoritos </a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-settings"></i> Configuracions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="night-mode" class="btn-night-mode">
+                                            <i class="icon-feather-moon"></i> Modo Oscuro
+                                            <span class="btn-night-mode-switch">
+                                                <span class="uk-switch-button"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <ul class="menu-divider">
+                                        <li><a href="#">
+                                                <i class="icon-feather-help-circle"></i> Ayuda</a>
+                                        </li>
+                                        <li><a href="../index.html">
+                                                <i class="icon-feather-log-out"></i> Sing Out</a>
+                                        </li>
+                                    </ul>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- icon search-->
+                        <a class="uk-navbar-toggle uk-hidden@s"
+                            uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#">
+                            <i class="uil-search icon-small"></i>
+                        </a>
+                        <!-- User icons -->
+                        <span class="uil-user icon-small uk-hidden@s"
+                            uk-toggle="target: .header-widget ; cls: is-active">
+                            </spanc>
+
+                    </div>
+                    <!-- End Right Side Content / End -->
+
+
+                </nav>
+
+            </div>
+            <!-- container  / End -->
+
+        </header>
+
+        <!-- content -->
+        <div class="page-content">
+            <div class="page-content-inner">
+
+
+                <nav id="breadcrumbs" class="mb-3">
+                    <ul>
+                        <li><a href="#"> <i class="uil-home-alt"></i> </a></li>
+                        <li> Cursos </li>
+
+                    </ul>
+                </nav>
+
+                <div class="d-flex justify-content-between mb-3">
+                    <h3> Cursos (14) </h3>
+
+                    <div>
+                        <a href="add-course.html" class="btn btn-default">
+                            <i class="uil-plus"> </i> Nuevo curso
+                        </a>
+                    </div>
+                </div>
+
+                <div class="uk-child-width-1-3@m" uk-grid
+                    uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div ; delay: 200">
+
+                    <div>
+                        <a href="#">
+                            <div class="card animate-this uk-inline-clip">
+                                <img src="../assets/images/course/diseno.jpg" alt="">
+                                <div class="card-body text-center pb-3">
+                                    <h6 class=" mb-0"> Publicidad </h6>
+                                </div>
+                                <div class="card-footer py-0 border-top-0">
+                                    <div class="row align-items-center text-center">
+                                        <div class="col-6 py-3">
+                                            <a href="#" class="text-muted"> 120 Vistas </a>
+                                        </div>
+                                        <div class="col-6 py-3">
+                                            <a href="#" class="text-muted"> 20 Inscritos </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <div class="card animate-this uk-inline-clip">
+                                <img src="../assets/images/course/html-curso.jpg" alt="">
+                                <div class="card-body text-center pb-3">
+                                    <h6 class=" mb-0"> Programacion Web </h6>
+                                </div>
+                                <div class="card-footer py-0 border-top-0">
+                                    <div class="row align-items-center text-center">
+                                        <div class="col-6 py-3">
+                                            <a href="#" class="text-muted"> 90 Vistas </a>
+                                        </div>
+                                        <div class="col-6 py-3">
+                                            <a href="#" class="text-muted"> 8 Inscritos </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <div class="card animate-this uk-inline-clip">
+                                <img src="../assets/images/course/chef-cocina.jpg" alt="">
+                                <div class="card-body text-center pb-3">
+                                    <h6 class=" mb-0"> Tecnicas para cocinar </h6>
+                                </div>
+                                <div class="card-footer py-0 border-top-0">
+                                    <div class="row align-items-center text-center">
+                                        <div class="col-6 py-3">
+                                            <a href="#" class="text-muted"> 230 Vistas </a>
+                                        </div>
+                                        <div class="col-6 py-3">
+                                            <a href="#" class="text-muted"> 21 Inscritos </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <div class="card animate-this uk-inline-clip">
+                                <img src="../assets/images/course/destacada_cook.jpg" alt="">
+                                <div class="card-body text-center pb-3">
+                                    <h6 class=" mb-0"> Recetas creativas </h6>
+                                </div>
+                                <div class="card-footer py-0 border-top-0">
+                                    <div class="row align-items-center text-center">
+                                        <div class="col-6 py-3">
+                                            <a href="#" class="text-muted"> 142 Vistas </a>
+                                        </div>
+                                        <div class="col-6 py-3">
+                                            <a href="#" class="text-muted"> 13 Inscritos </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <div class="card animate-this uk-inline-clip">
+                                <img src="../assets/images/course/multimedia.jpg" alt="">
+                                <div class="card-body text-center pb-3">
+                                    <h6 class=" mb-0"> Multimedia </h6>
+                                </div>
+                                <div class="card-footer py-0 border-top-0">
+                                    <div class="row align-items-center text-center">
+                                        <div class="col-6 py-3">
+                                            <a href="#" class="text-muted"> 80 Vistas </a>
+                                        </div>
+                                        <div class="col-6 py-3">
+                                            <a href="#" class="text-muted"> 6 Inscritos </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <div class="card animate-this uk-inline-clip">
+                                <img src="../assets/images/course/sociedad2.jpg" alt="">
+                                <div class="card-body text-center pb-3">
+                                    <h6 class=" mb-0"> Relaciones humanas </h6>
+                                </div>
+                                <div class="card-footer py-0 border-top-0">
+                                    <div class="row align-items-center text-center">
+                                        <div class="col-6 py-3">
+                                            <a href="#" class="text-muted"> 120 Vistas </a>
+                                        </div>
+                                        <div class="col-6 py-3">
+                                            <a href="#" class="text-muted"> 20 Interesados </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <ul class="uk-pagination my-5 uk-flex-center" uk-margin>
+                    <li class="uk-active"><span>1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li class="uk-disabled"><span>...</span></li>
+                    <li><a href="#"><span uk-pagination-next></span></a></li>
+                </ul>
+
+
+
+
+
+                <!-- footer
+                ================================================== -->
+
+            </div>
+
+        </div>
+
+        <!-- For Night mode -->
+        <script>
+            (function (window, document, undefined) {
+                'use strict';
+                if (!('localStorage' in window)) return;
+                var nightMode = localStorage.getItem('gmtNightMode');
+                if (nightMode) {
+                    document.documentElement.className += ' night-mode';
+                }
+            })(window, document);
+
+
+            (function (window, document, undefined) {
+
+                'use strict';
+
+                // Feature test
+                if (!('localStorage' in window)) return;
+
+                // Get our newly insert toggle
+                var nightMode = document.querySelector('#night-mode');
+                if (!nightMode) return;
+
+                // When clicked, toggle night mode on or off
+                nightMode.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    document.documentElement.classList.toggle('night-mode');
+                    if (document.documentElement.classList.contains('night-mode')) {
+                        localStorage.setItem('gmtNightMode', true);
+                        return;
+                    }
+                    localStorage.removeItem('gmtNightMode');
+                }, false);
+
+            })(window, document);
+        </script>
+
+
+        <!-- javaScripts
+    ================================================== -->
+        <script src="../assets/js/framework.js"></script>
+        <script src="../assets/js/jquery-3.3.1.min.js"></script>
+        <script src="../assets/js/simplebar.js"></script>
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/bootstrap-select.min.js"></script>
+
+
+
+</body>
+
+</html>

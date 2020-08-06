@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Capacita Tech | Temas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link href="../assets/images/favicon.ico" rel="icon" type="image/ico">
+
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/night-mode.css">
+    <link rel="stylesheet" href="../assets/css/framework.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css"> 
+
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/icons.css">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Header Container
+        ================================================== -->
+        <header class="header" uk-sticky="top:20 ; cls-active:header-sticky">
+
+            <div class="container">
+                <nav uk-navbar>
+
+                    <!-- left Side Content -->
+                    <div class="uk-navbar-left">
+
+                        <span class="btn-mobile" uk-toggle="target: #wrapper ; cls: mobile-active"></span>
+
+
+
+                        <!-- logo -->
+                        
+
+                        <!-- breadcrumbs -->
+                        <nav id="breadcrumbs">
+                            <ul>
+                                <li><a href="#"> Dashboard </a></li>
+                                <li><a href="#">Cursos</a></li>
+                                <li>Temas</li>
+                            </ul>
+                        </nav>
+
+
+                    </div>
+
+
+                    <!--  Right Side Content   -->
+
+                    <div class="uk-navbar-right">
+
+                        <div class="header-widget">
+                            <!-- User icons close mobile-->
+                            <span class="icon-feather-x icon-small uk-hidden@s"
+                                uk-toggle="target: .header-widget ; cls: is-active"> </span>
+
+                            <!-- profile-icon-->
+
+                            <a href="#" class="header-widget-icon profile-icon">
+                                <img src="../assets/images/avatars/home-profile.jpg" alt="" class="header-profile-icon">
+                            </a>
+
+                            <div uk-dropdown="pos: top-right ;mode:click" class="dropdown-notifications small">
+
+                                <!-- User Name / Avatar -->
+                                <a href="#">
+
+                                    <div class="dropdown-user-details">
+                                        <div class="dropdown-user-avatar">
+                                            <img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                        </div>
+                                        <div class="dropdown-user-name">
+                                            Juan Perez <span>Estudiante</span>
+                                        </div>
+                                    </div>
+
+                                </a>
+
+                                <!-- User menu -->
+
+                                <ul class="dropdown-user-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-material-outline-dashboard"></i> Dashboard</a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-bookmark"></i> Favoritos </a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-settings"></i> Configuracion</a>
+                                    </li>
+                                   
+                                    <li class="menu-divider">
+                                    
+                                    <li><a href="../index.html">
+                                            <i class="icon-feather-log-out"></i> Salir</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <!-- End Right Side Content / End -->
+
+
+                </nav>
+
+            </div>
+            <!-- container  / End -->
+
+        </header>
+
+        <!-- overlay seach on mobile-->
+        <div class="nav-overlay uk-navbar-left uk-position-relative uk-flex-1 bg-grey uk-light p-2" hidden
+            style="z-index: 10000;">
+            <div class="uk-navbar-item uk-width-expand" style="min-height: 60px;">
+                <form class="uk-search uk-search-navbar uk-width-1-1">
+                    <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                </form>
+            </div>
+            <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade"
+                href="#"></a>
+        </div>
+
+        <!-- search overlay-->
+        <div id="searchbox">
+
+            <div class="search-overlay"></div>
+
+            <div class="search-input-wrapper">
+                <div class="search-input-container">
+                    <div class="search-input-control">
+                        <span class="icon-feather-x btn-close uk-animation-scale-up"
+                            uk-toggle="target: #searchbox; cls: is-active"></span>
+                        <div class=" uk-animation-slide-bottom">
+                            <input type="text" name="search" autofocus required>
+                            <p class="search-help">Type the name of the Course and book you are looking for</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- side nav-->
+        <div class="side-nav uk-animation-slide-left-medium">
+
+            <div class="side-nav-bg"></div>
+
+            <!-- logo -->
+            <div class="logo uk-visible@s">
+                <a href="dashboard.html">
+                    <img src="../assets/images/logo_without_text.svg" alt="">
+                </a>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#"> <i class="uil-play-circle"></i> </a>
+                    <div class="side-menu-slide">
+                        <div class="side-menu-slide-content">
+                            <ul data-simplebar>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-brush-alt "></i> Sitios Web </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-android-alt"></i>Applicacione </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-bag-alt"></i> Negocios </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-window"></i> Tecnologia </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-palette"></i> Diseños </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-megaphone"></i> Publicidad </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-life-ring"></i> Estilo de vida </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class=" uil-camera"></i> Forografia </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-medkit"></i> Salud </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-music"></i> Musica </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-shopping-cart-alt"></i> Ecommerce
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-utensils-alt "></i> Comida </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-lightbulb-alt"></i> Enseñanza </a>
+                                </li>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!-- book -->
+                    <a href="book.html"> <i class="uil-book-alt"></i> <span class="tooltips"> Libros</span> </a>
+                </li>
+                <li>
+                    <!-- Episodes -->
+                    <a href="episode.html"> <i class="uil-youtube-alt"></i> <span class="tooltips"> Episodios</span></a>
+                </li>
+
+            </ul>
+            <ul class="uk-position-bottom">
+                <li>
+                    <!-- Lunch information box -->
+                    <a href="#">
+                        <i class="uil-paint-tool"></i>
+                    </a>
+                    <div uk-drop="pos: right-bottom ;mode:click ; offset: 10;animation: uk-animation-slide-right-small">
+                        <div class="uk-card-default rounded p-0">
+                            <h5 class="mb-0 p-3 px-4  bg-light"> Modo Oscuro</h5>
+                            <div class="p-3 px-4">
+                                <p> Deslice el interruptor para cambiar entre apariencias</p>
+                                <div class="uk-flex">
+                                    <p class="uk-text-small text-muted">Tema Oscuro</p>
+                                    <!-- night mode button -->
+                                    <span href="#" id="night-mode" class="btn-night-mode">
+                                        <label class="btn-night-mode-switch">
+                                            <span class="uk-switch-button"></span>
+                                        </label>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- content -->
+        <div class="page-content">
+
+
+            <div class="container">
+
+
+                <div class="mt-lg-4" uk-grid>
+                    <div class="uk-width-1-4@m">
+                        <img src="../assets/images/course/teach2.jpg" alt="" class="rounded shadow">
+                    </div>
+                    <div class="uk-width-expand">
+                        <p class="my-0 uk-text-small">Tema</p>
+                        <h3 class="mt-0"> Enseñansas </h3>
+                        <p> Conoce las mejores tecnicas para la enseñanza en esta siglo tecnologico y las maneras de captar la atencion de tus estudiantes
+                            <a href="#">Leer mas</a></p>
+                    </div>
+                    <div class="uk-width-1-4@m">
+                        <h5> Etiquetas relacionadas </h5>
+                        <div uk-margin>
+                            <a href="#" class="mr-1">Tecnologia</a>
+                            <a href="#" class="mr-1">Metricas</a>
+                            <a href="#" class="mr-1">Redes sociales</a>
+                            <a href="#" class="mr-1">Procedimientos</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="course-path-info my-4 my-lg-5">
+                    <h4 class="uk-text-bold"> Lo que aprenderas </h4>
+                    <ul>
+                        <li>Conocimiento basico sobre enseñanza </li>
+                        <li>Mejores practicas al enseñar</li>
+                        <li>Tecnicas para captar la atencion</li>
+                        <li>Utilizacion de material audio visual</li>
+                        <li>Uso de tecnologias modernas</li>
+                        <li>Impacto de las redes sociales en la enseñanza</li>
+                        <li>Importancia de los idiomas </li>
+                        <li>Relaciones humanas</li>
+                        <li>Cultura</li>
+                    </ul>
+                </div>
+
+                <ul class="course-path-level" uk-accordion>
+
+                    <li class="uk-open">
+                        <a class="uk-accordion-title" href="#">Nivel Principiante </a>
+                        <div class="uk-accordion-content">
+                            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam
+                                quis nostrud exerci tation ullamcorper suscipit.</p>
+
+                            <div class="path-wrap">
+
+                                <div class=" course-grid-slider" uk-slider="finite: true">
+
+                                    <ul
+                                        class="uk-slider-items uk-child-width-1-3@m uk-child-width-1-5@m uk-grid-match uk-grid">
+                                        <li>
+                                            <div class="course-card completed">
+                                                <div class="course-card-thumbnail">
+                                                    <img src="../assets/images/course/gs.jpg">
+                                                    <a href="course-lesson-1.html" class="play-button-trigger show"> </a>
+                                                    <span class="duration">5:39</span>
+                                                </div>
+                                                <div class="course-card-body">
+                                                    <span class="completed-text"> Completado </span>
+                                                    <h4> Introduccion </h4>
+                                                    <p> Conocer las bases</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="course-card">
+                                                <div class="course-card-thumbnail">
+                                                    <img src="../assets/images/course/cg.jpg">
+                                                    <a href="course-lesson-1.html" class="play-button-trigger show"> </a>
+                                                    <span class="duration">2:39</span>
+                                                </div>
+                                                <div class="course-progressbar">
+                                                    <div class="course-progressbar-filler" style="width:25%"></div>
+                                                </div>
+                                                <div class="course-card-body">
+                                                    <h4> Conocimiento general </h4>
+                                                    <p> Historia de la enseñanza atravez de los años.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="course-card">
+                                                <div class="course-card-thumbnail">
+                                                    <img src="../assets/images/course/beneficios-de-las-tic.jpg">
+                                                    <a href="course-lesson-1.html" class="play-button-trigger show"> </a>
+                                                    <span class="duration">1:39</span>
+                                                </div>
+                                                <div class="course-progressbar">
+                                                    <div class="course-progressbar-filler" style="width:15%"></div>
+                                                </div>
+                                                <div class="course-card-body">
+                                                    <h4> Redes sociales </h4>
+                                                    <p> Impacto de la redes sociales en la enseñanza</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="course-card">
+                                                <div class="course-card-thumbnail">
+                                                    <img src="../assets/images/course/teach1.jpg">
+                                                    <a href="course-lesson-1.html" class="play-button-trigger show"> </a>
+                                                    <span class="duration">2:19</span>
+                                                </div>
+                                                <div class="course-progressbar">
+                                                    <div class="course-progressbar-filler" style="width:0%"></div>
+                                                </div>
+                                                <div class="course-card-body">
+                                                    <h4> Aplicando Metodos </h4>
+                                                    <p>Aprender a aplicar metodos de enseñanza mas eficientemente.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="course-card">
+                                                <div class="course-card-thumbnail">
+                                                    <img src="../assets/images/course/teach2.jpg">
+                                                    <a href="course-lesson-1.html" class="play-button-trigger show"> </a>
+                                                    <span class="duration">3:39</span>
+                                                </div>
+                                                <div class="course-progressbar">
+                                                    <div class="course-progressbar-filler" style="width:5%"></div>
+                                                </div>
+                                                <div class="course-card-body">
+                                                    <h4> Aplicando Modelos de enseñanza </h4>
+                                                    <p> Aprender a como aplicar estos modelos.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="course-card">
+                                                <div class="course-card-thumbnail">
+                                                    <img src="../assets/images/course/sociedad.jpg">
+                                                    <a href="course-lesson-1.html" class="play-button-trigger show"> </a>
+                                                    <span class="duration">5:39</span>
+                                                </div>
+                                                <div class="course-progressbar">
+                                                    <div class="course-progressbar-filler" style="width:25%"></div>
+                                                </div>
+                                                <div class="course-card-body">
+                                                    <h4> Impacto en la sociedad </h4>
+                                                    <p> Explicacion del impacto causado..</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover slidenav-prev"
+                                        href="#" uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover slidenav-next"
+                                        href="#" uk-slider-item="next"></a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                    <li class="uk-open">
+                        <a class="uk-accordion-title" href="#"> Nivel Intermedio </a>
+                        <div class="uk-accordion-content">
+                            <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam
+                                quis nostrud exerci tation ullamcorper suscipit,</p>
+
+                            <div class="path-wrap">
+
+                                <div class="course-grid-slider" uk-slider="finite: true">
+
+                                    <ul
+                                        class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-5@m uk-grid-match uk-grid">
+                                        <li>
+                                            <div class="course-card">
+                                                <div class="course-card-thumbnail">
+                                                    <img src="../assets/images/course/teach3.jpg">
+                                                    <a href="course-lesson-1.html" class="play-button-trigger show"> </a>
+                                                    <span class="duration">5:39</span>
+                                                </div>
+                                                <div class="course-progressbar">
+                                                    <div class="course-progressbar-filler" style="width:25%"></div>
+                                                </div>
+                                                <div class="course-card-body">
+                                                    <h4> Mejores practicas </h4>
+                                                    <p> Conocer las mejores practicas al enseñar</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="course-card">
+                                                <div class="course-card-thumbnail">
+                                                    <img src="../assets/images/course/teach6.jpg">
+                                                    <a href="course-lesson-1.html" class="play-button-trigger show"> </a>
+                                                    <span class="duration">2:39</span>
+                                                </div>
+                                                <div class="course-progressbar">
+                                                    <div class="course-progressbar-filler" style="width:25%"></div>
+                                                </div>
+                                                <div class="course-card-body">
+                                                    <h4> Tecnicas para captar la atencion</h4>
+                                                    <p>Diferentes metodos para que el alumno capte bien tu atencion </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="course-card">
+                                                <div class="course-card-thumbnail">
+                                                    <img src="../assets/images/course/teach4.jpg">
+                                                    <a href="course-lesson-1.html" class="play-button-trigger show"> </a>
+                                                    <span class="duration">1:39</span>
+                                                </div>
+                                                <div class="course-progressbar">
+                                                    <div class="course-progressbar-filler" style="width:15%"></div>
+                                                </div>
+                                                <div class="course-card-body">
+                                                    <h4>Herramientas </h4>
+                                                    <p> Uso de herrramientas audio visual.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="course-card">
+                                                <div class="course-card-thumbnail">
+                                                    <img src="../assets/images/course/teach5.jpg">
+                                                    <a href="course-lesson-1.html" class="play-button-trigger show"> </a>
+                                                    <span class="duration">2:19</span>
+                                                </div>
+                                                <div class="course-progressbar">
+                                                    <div class="course-progressbar-filler" style="width:0%"></div>
+                                                </div>
+                                                <div class="course-card-body">
+                                                    <h4>Tecnicas Modernas </h4>
+                                                    <p> Tecnicas y casos de estudios.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="course-card">
+                                                <div class="course-card-thumbnail">
+                                                    <img src="../assets/images/course/sociedad2.jpg">
+                                                    <a href="course-lesson-1.html" class="play-button-trigger show"> </a>
+                                                    <span class="duration">3:39</span>
+                                                </div>
+                                                <div class="course-progressbar">
+                                                    <div class="course-progressbar-filler" style="width:5%"></div>
+                                                </div>
+                                                <div class="course-card-body">
+                                                    <h4> Relaciones humanas </h4>
+                                                    <p>Comunicate de manera eficiente con tus receptores </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="course-card">
+                                                <div class="course-card-thumbnail">
+                                                    <img src="../assets/images/course/teach5.jpg">
+                                                    <a href="course-lesson-1.html" class="play-button-trigger show"> </a>
+                                                    <span class="duration">5:39</span>
+                                                </div>
+                                                <div class="course-progressbar">
+                                                    <div class="course-progressbar-filler" style="width:25%"></div>
+                                                </div>
+                                                <div class="course-card-body">
+                                                    <h4> Idioma y cultura </h4>
+                                                    <p> Aprende del entorno en el te esta desarrollando.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover slidenav-prev"
+                                        href="#" uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover slidenav-next"
+                                        href="#" uk-slider-item="next"></a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </li>
+
+                </ul>
+
+
+
+                <!-- footer
+               ================================================== -->
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- For Night mode -->
+    <script>
+        (function (window, document, undefined) {
+            'use strict';
+            if (!('localStorage' in window)) return;
+            var nightMode = localStorage.getItem('gmtNightMode');
+            if (nightMode) {
+                document.documentElement.className += ' night-mode';
+            }
+        })(window, document);
+
+
+        (function (window, document, undefined) {
+
+            'use strict';
+
+            // Feature test
+            if (!('localStorage' in window)) return;
+
+            // Get our newly insert toggle
+            var nightMode = document.querySelector('#night-mode');
+            if (!nightMode) return;
+
+            // When clicked, toggle night mode on or off
+            nightMode.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.documentElement.classList.toggle('night-mode');
+                if (document.documentElement.classList.contains('night-mode')) {
+                    localStorage.setItem('gmtNightMode', true);
+                    return;
+                }
+                localStorage.removeItem('gmtNightMode');
+            }, false);
+
+        })(window, document);
+    </script>
+
+
+
+    <!-- javaScripts
+    ================================================== -->
+    <script src="../assets/js/framework.js"></script>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/simplebar.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/bootstrap-select.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Capacita Tech | Cursos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link href="../assets/images/favicon.ico" rel="icon" type="image/ico">
+
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/night-mode.css">
+    <link rel="stylesheet" href="../assets/css/framework.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css"> 
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/icons.css">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Header Container
+        ================================================== -->
+        <header class="header" uk-sticky="top:20 ; cls-active:header-sticky">
+
+            <div class="container">
+                <nav uk-navbar>
+
+                    <!-- left Side Content -->
+                    <div class="uk-navbar-left">
+
+                        <span class="btn-mobile" uk-toggle="target: #wrapper ; cls: mobile-active"></span>
+
+
+
+                        <!-- logo -->
+                    
+
+                        <!-- breadcrumbs -->
+                        <nav id="breadcrumbs">
+                            <ul>
+                                <li><a href="#"> Dashboard </a></li>
+                                <li><a >Cursos</a></li>
+                            </ul>
+                        </nav>
+
+
+                    </div>
+
+
+                    <!--  Right Side Content   -->
+
+                    <div class="uk-navbar-right">
+
+                        <div class="header-widget">
+                            <!-- User icons close mobile-->
+                            <span class="icon-feather-x icon-small uk-hidden@s"
+                                uk-toggle="target: .header-widget ; cls: is-active"> </span>
+
+                            <!-- profile-icon-->
+
+                            <a href="#" class="header-widget-icon profile-icon">
+                                <img src="../assets/images/avatars/home-profile.jpg" alt="" class="header-profile-icon">
+                            </a>
+
+                            <div uk-dropdown="pos: top-right ;mode:click" class="dropdown-notifications small">
+
+                                <!-- User Name / Avatar -->
+                                <a href="#">
+
+                                    <div class="dropdown-user-details">
+                                        <div class="dropdown-user-avatar">
+                                            <img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                        </div>
+                                        <div class="dropdown-user-name">
+                                            Juan Perez <span>Estudiante</span>
+                                        </div>
+                                    </div>
+
+                                </a>
+
+                                <!-- User menu -->
+
+                                <ul class="dropdown-user-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-material-outline-dashboard"></i> Dashboard</a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-bookmark"></i> Favoritos </a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-settings"></i> Configuracion</a>
+                                    </li>
+                                   
+                                    <li class="menu-divider">
+                                    
+                                    <li><a href="../index.html">
+                                            <i class="icon-feather-log-out"></i> Salir</a>
+                                    </li>
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <!-- End Right Side Content / End -->
+
+
+                </nav>
+
+            </div>
+            <!-- container  / End -->
+
+        </header>
+
+        <!-- overlay seach on mobile-->
+        <div class="nav-overlay uk-navbar-left uk-position-relative uk-flex-1 bg-grey uk-light p-2" hidden
+            style="z-index: 10000;">
+            <div class="uk-navbar-item uk-width-expand" style="min-height: 60px;">
+                <form class="uk-search uk-search-navbar uk-width-1-1">
+                    <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                </form>
+            </div>
+            <a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade"
+                href="#"></a>
+        </div>
+
+        <!-- search overlay-->
+        <div id="searchbox">
+
+            <div class="search-overlay"></div>
+
+            <div class="search-input-wrapper">
+                <div class="search-input-container">
+                    <div class="search-input-control">
+                        <span class="icon-feather-x btn-close uk-animation-scale-up"
+                            uk-toggle="target: #searchbox; cls: is-active"></span>
+                        <div class=" uk-animation-slide-bottom">
+                            <input type="text" name="search" autofocus required>
+                            <p class="search-help">Type the name of the Course and book you are looking for</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- side nav-->
+        <div class="side-nav uk-animation-slide-left-medium">
+
+            <div class="side-nav-bg"></div>
+
+            <!-- logo -->
+            <div class="logo uk-visible@s">
+                <a href="dashboard.html">
+                    <img src="../assets/images/logo_without_text.svg" alt="">
+                </a>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#"> <i class="uil-play-circle"></i> </a>
+                    <div class="side-menu-slide">
+                        <div class="side-menu-slide-content">
+                            <ul data-simplebar>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-brush-alt "></i> Sitios Web </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-android-alt"></i>Applicacione </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-bag-alt"></i> Negocios </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-window"></i> Tecnologia </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-palette"></i> Diseños </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-megaphone"></i> Publicidad </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-life-ring"></i> Estilo de vida </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class=" uil-camera"></i> Forografia </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-medkit"></i> Salud </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-music"></i> Musica </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-shopping-cart-alt"></i> Ecommerce
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-utensils-alt "></i> Comida </a>
+                                </li>
+                                <li>
+                                    <a href="courses.html"> <i class="uil-lightbulb-alt"></i> Enseñanza </a>
+                                </li>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!-- book -->
+                    <a href="book.html"> <i class="uil-book-alt"></i> <span class="tooltips"> Libros</span> </a>
+                </li>
+                <li>
+                    <!-- Episodes -->
+                    <a href="episode.html"> <i class="uil-youtube-alt"></i> <span class="tooltips"> Episodios</span></a>
+                </li>
+
+            </ul>
+            <ul class="uk-position-bottom">
+                <li>
+                    <!-- Lunch information box -->
+                    <a href="#">
+                        <i class="uil-paint-tool"></i>
+                    </a>
+                    <div uk-drop="pos: right-bottom ;mode:click ; offset: 10;animation: uk-animation-slide-right-small">
+                        <div class="uk-card-default rounded p-0">
+                            <h5 class="mb-0 p-3 px-4  bg-light"> Modo Oscuro</h5>
+                            <div class="p-3 px-4">
+                                <p> Deslice el interruptor para cambiar entre apariencias</p>
+                                <div class="uk-flex">
+                                    <p class="uk-text-small text-muted">Tema Oscuro</p>
+                                    <!-- night mode button -->
+                                    <span href="#" id="night-mode" class="btn-night-mode">
+                                        <label class="btn-night-mode-switch">
+                                            <span class="uk-switch-button"></span>
+                                        </label>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- content -->
+        <div class="page-content">
+
+
+            <div class="container">
+
+                <h1>Cursos</h1>
+
+                <h4> Ve y Descubre <a href="#">Cursos</a> </h4>
+
+                <nav class="responsive-tab style-2">
+                    <ul>
+                        <li class="uk-active"><a href="#">Mas populares</a></li>
+                        <li><a href="#">Nuevos</a></li>
+                        <li><a href="#">Intermedios </a></li>
+                        <li><a href="#">Avanzados</a></li>
+                    </ul>
+                </nav>
+
+                <div class="section-small">
+                    <div class="uk-child-width-1-4@m uk-child-width-1-3@s course-card-grid" uk-grid>
+                        <div>
+                            <a href="course-intro.html">
+                                <div class="course-card">
+                                    <div class="course-card-thumbnail ">
+                                        <img src="../assets/images/course/teach1.jpg">
+                                        <span class="play-button-trigger"></span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-info">
+                                            <div>
+                                                <span class="catagroy">Enseñanza</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-feather-bookmark icon-small"></i>
+                                            </div>
+                                        </div>
+                                        <h4>Aprende nuevas tecnicas </h4>
+                                        <p>Como captar la atencion de tus alumnos mediante ..</p>
+                                        <div class="course-card-footer">
+                                            <h5> <i class="icon-feather-film"></i> 12 Lecciones </h5>
+                                            <h5> <i class="icon-feather-clock"></i> 64 Horas </h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                        </div>
+                        <div>
+                            <a href="course-intro.html">
+                                <div class="course-card">
+                                    <div class="course-card-thumbnail ">
+                                        <img src="../assets/images/course/logotipo.jpg">
+                                        <span class="play-button-trigger"></span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-info">
+                                            <div>
+                                                <span class="catagroy">Tips</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-feather-bookmark icon-small"></i>
+                                            </div>
+                                        </div>
+                                        <h4>Publicidad </h4>
+                                        <p> Aprende a como dar publicidad a tu negocio.. </p>
+                                        <div class="course-card-footer">
+                                            <h5> <i class="icon-feather-film"></i> 9 Lecciones </h5>
+                                            <h5> <i class="icon-feather-clock"></i> 30 Horas </h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                        </div>
+                        <div>
+                            <a href="course-intro.html">
+                                <div class="course-card">
+                                    <div class="course-card-thumbnail ">
+                                        <img src="../assets/images/course/chef-cocina.jpg">
+                                        <span class="play-button-trigger"></span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-info">
+                                            <div>
+                                                <span class="catagroy">Cocina</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-feather-bookmark icon-small"></i>
+                                            </div>
+                                        </div>
+
+                                        <h4>Tecnicas para cocinar </h4>
+                                        <p> Aprende tecnica de los chef profecionales.
+                                        </p>
+
+                                        <div class="course-card-footer">
+                                            <h5> <i class="icon-feather-film"></i> 10 Lecciones </h5>
+                                            <h5> <i class="icon-feather-clock"></i> 25 Horas </h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-header pb-0 mt-5">
+                    <div class="section-header-left">
+                        <h4> Mas populares <a href="courses.html">Cursos</a> </h4>
+                    </div>
+                    <div class="section-header-right">
+
+                        <a href="#" class="btn-filter" uk-tooltip="title: Filtro ; pos:  top-right"
+                            uk-toggle="target: #course-filter">
+                            <i class="icon-feather-filter"></i>
+                        </a>
+                        <div class="display-as">
+                            <a href="courses-list.html" uk-tooltip="title: Lista; pos: top-right">
+                                <i class="icon-feather-list"></i></a>
+                            <a href="#" class="active" uk-tooltip="title: Cuadricula; pos: top-right">
+                                <i class="icon-feather-grid"></i></a>
+                        </div>
+ 
+                        <select class="selectpicker ml-3">
+                            <option value="">Recientes</option>
+                            <option value="1">Populares</option>
+                            <option value="2">Gratis</option>
+                            <option value="3">Premium</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="section-small">
+
+                    <div class="uk-child-width-1-4@m uk-child-width-1-3@s course-card-grid uk-grid-match" uk-grid>
+
+                        <div>
+                            <a href="course-intro.html">
+                                <div class="course-card">
+                                    <div class="course-card-thumbnail ">
+                                        <img src="../assets/images/course/teach2.jpg">
+                                        <span class="play-button-trigger"></span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-info">
+                                            <div>
+                                                <span class="catagroy">Enseñanza</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-feather-bookmark icon-small"></i>
+                                            </div>
+                                        </div>
+                                        <h4>Aprende nuevas tecnicas </h4>
+                                        <p>Como captar la atencion de tus alumnos mediante ..</p>
+                                        <div class="course-card-footer">
+                                            <h5> <i class="icon-feather-film"></i> 12 Lecciones </h5>
+                                            <h5> <i class="icon-feather-clock"></i> 64 Horas </h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="course-intro.html">
+                                <div class="course-card">
+                                    <div class="course-card-thumbnail ">
+                                        <img src="../assets/images/course/diseno.jpg">
+                                        <span class="play-button-trigger"></span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-info">
+                                            <div>
+                                                <span class="catagroy">Tips</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-feather-bookmark icon-small"></i>
+                                            </div>
+                                        </div>
+                                        <h4>Publicidad </h4>
+                                        <p> Aprende a como dar publicidad a tu negocio.. </p>
+                                        <div class="course-card-footer">
+                                            <h5> <i class="icon-feather-film"></i> 9 Lecciones </h5>
+                                            <h5> <i class="icon-feather-clock"></i> 30 Horas </h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="course-intro.html">
+                                <div class="course-card">
+                                    <div class="course-card-thumbnail ">
+                                        <img src="../assets/images/course/chef-cocina.jpg">
+                                        <span class="play-button-trigger"></span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-info">
+                                            <div>
+                                                <span class="catagroy">Cocina</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-feather-bookmark icon-small"></i>
+                                            </div>
+                                        </div>
+
+                                        <h4>Tecnicas para cocinar </h4>
+                                        <p> Aprende tecnica de los chef profecionales.
+                                        </p>
+
+                                        <div class="course-card-footer">
+                                            <h5> <i class="icon-feather-film"></i> 10 Lecciones </h5>
+                                            <h5> <i class="icon-feather-clock"></i> 25 Horas </h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                        </div>
+                        <div>
+                            <a href="course-intro.html">
+                                <div class="course-card">
+                                    <div class="course-card-thumbnail ">
+                                        <img src="../assets/images/course/descargar.png">
+                                        <span class="play-button-trigger"></span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-info">
+                                            <div>
+                                                <span class="catagroy">Tecnologia</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-feather-bookmark icon-small"></i>
+                                            </div>
+                                        </div>
+                                        <h4>Descargas Gratis</h4>
+                                        <p>Aprende a descargar musicas y videos de..</p>
+
+                                        <div class="course-card-footer">
+                                            <h5> <i class="icon-feather-film"></i> 10 Lecciones </h5>
+                                            <h5> <i class="icon-feather-clock"></i> 20 Horas </h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="course-intro.html">
+                                <div class="course-card">
+                                    <div class="course-card-thumbnail ">
+                                        <img src="../assets/images/course/diseno.jpg">
+                                        <span class="play-button-trigger"></span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-info">
+                                            <div>
+                                                <span class="catagroy">Diseño</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-feather-bookmark icon-small"></i>
+                                            </div>
+                                        </div>
+
+                                        <h4>Edicion de imagenes</h4>
+                                        <p>Aprende a quitar fondos e imperfecciones de tus fotos..</p>
+
+                                        <div class="course-card-footer">
+                                            <h5> <i class="icon-feather-film"></i> 34 Lecciones </h5>
+                                            <h5> <i class="icon-feather-clock"></i> 54 Horas </h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+
+                        </div>
+                        <div>
+                            <a href="course-intro.html">
+                                <div class="course-card">
+                                    <div class="course-card-thumbnail ">
+                                        <img src="../assets/images/course/paint.jpg">
+                                        <span class="play-button-trigger"></span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-info">
+                                            <div>
+                                                <span class="catagroy">Diseño</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-feather-bookmark icon-small"></i>
+                                            </div>
+                                        </div>
+                                        <h4>Edicion de videos</h4>
+                                        <p>Personaliza tus videos para subirlos a tus redes sociales mas.. </p>
+                                        <div class="course-card-footer">
+                                            <h5> <i class="icon-feather-film"></i> 12 Lecciones </h5>
+                                            <h5> <i class="icon-feather-clock"></i> 64 Horas </h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="course-intro.html">
+                                <div class="course-card">
+                                    <div class="course-card-thumbnail ">
+                                        <img src="../assets/images/course/goodpractice.jpg">
+                                        <span class="play-button-trigger"></span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-info">
+                                            <div>
+                                                <span class="catagroy">Enseñanza</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-feather-bookmark icon-small"></i>
+                                            </div>
+                                        </div>
+                                        <h4>Crecimiento profesional</h4>
+                                        <p> Aprende a como mantenerte actualizado en el mundo..</p>
+                                        <div class="course-card-footer">
+                                            <h5> <i class="icon-feather-film"></i> 33 Lecciones </h5>
+                                            <h5> <i class="icon-feather-clock"></i> 26 Horas </h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="course-intro.html">
+                                <div class="course-card">
+                                    <div class="course-card-thumbnail ">
+                                        <img src="../assets/images/course/eT.jpg">
+                                        <span class="play-button-trigger"></span>
+                                    </div>
+                                    <div class="course-card-body">
+                                        <div class="course-card-info">
+                                            <div>
+                                                <span class="catagroy">Tacnologia</span>
+                                            </div>
+                                            <div>
+                                                <i class="icon-feather-bookmark icon-small"></i>
+                                            </div>
+                                        </div>
+
+                                        <h4>Tendencias tecnologicas </h4>
+                                        <p> Actualizate en el nuevo mundo tecnologico..</p>
+
+                                        <div class="course-card-footer">
+                                            <h5> <i class="icon-feather-film"></i> 33 Lecciones </h5>
+                                            <h5> <i class="icon-feather-clock"></i> 26 Horas </h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- pagination menu -->
+                <ul class="uk-pagination my-5 uk-flex-center" uk-margin>
+                    <li><a href="#"><span uk-pagination-previous></span></a></li>
+                    <li class="uk-disabled"><span>...</span></li>
+                    <li><a href="#">4</a></li>
+                    <li class="uk-active"><span>7</span></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">10</a></li>
+                    <li class="uk-disabled"><span>...</span></li>
+                    <li><a href="#"><span uk-pagination-next></span></a></li>
+                </ul>
+
+                <div id="course-filter" uk-offcanvas="flip: true; overlay: true">
+                    <div class="uk-offcanvas-bar">
+
+                        <!-- close button -->
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                        <div class="sidebar-filter">
+
+                            <div class="sidebar-filter-contents">
+
+
+                                <h4> Filtrar por </h4>
+
+                                <ul class="sidebar-filter-list" uk-accordion="multiple: true">
+
+                                    <li class="uk-open">
+                                        <a class="uk-accordion-title" href="#"> Niveles </a>
+                                        <div class="uk-accordion-content">
+                                            <div class="uk-form-controls">
+                                                <label>
+                                                    <input class="uk-radio" type="radio" name="radio1">
+                                                    <span class="test"> Principiante <span> (25) </span> </span>
+                                                </label>
+                                                <label>
+                                                    <input class="uk-radio" type="radio" name="radio1">
+                                                    <span class="test"> Intermedio<span> (32) </span></span>
+                                                </label>
+                                                <label>
+                                                    <input class="uk-radio" type="radio" name="radio1">
+                                                    <span class="test"> Experto <span> (12) </span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="uk-open">
+                                        <a class="uk-accordion-title" href="#"> Tipos </a>
+                                        <div class="uk-accordion-content">
+                                            <div class="uk-form-controls">
+                                                <label>
+                                                    <input class="uk-radio" type="radio" name="radio2">
+                                                    <span class="test"> Gratis (42) </span>
+                                                </label>
+                                                <label>
+                                                    <input class="uk-radio" type="radio" name="radio2">
+                                                    <span class="test"> Pagados </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="uk-open">
+                                        <a class="uk-accordion-title" href="#"> Duracion </a>
+                                        <div class="uk-accordion-content">
+                                            <div class="uk-form-controls">
+                                                <label>
+                                                    <input class="uk-radio" type="radio" name="radio3">
+                                                    <span class="test"> +5 Horas (23) </span>
+                                                </label>
+                                                <label>
+                                                    <input class="uk-radio" type="radio" name="radio3">
+                                                    <span class="test"> +10 Horas (12)</span>
+                                                </label>
+                                                <label>
+                                                    <input class="uk-radio" type="radio" name="radio3">
+                                                    <span class="test"> +20 Horas (5)</span>
+                                                </label>
+                                                <label>
+                                                    <input class="uk-radio" type="radio" name="radio3">
+                                                    <span class="test"> +30 Horas (2)</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+
+
+                                </ul>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <!-- footer
+               ================================================== -->
+            
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- For Night mode -->
+    <script>
+        (function (window, document, undefined) {
+            'use strict';
+            if (!('localStorage' in window)) return;
+            var nightMode = localStorage.getItem('gmtNightMode');
+            if (nightMode) {
+                document.documentElement.className += ' night-mode';
+            }
+        })(window, document);
+
+
+        (function (window, document, undefined) {
+
+            'use strict';
+
+            // Feature test
+            if (!('localStorage' in window)) return;
+
+            // Get our newly insert toggle
+            var nightMode = document.querySelector('#night-mode');
+            if (!nightMode) return;
+
+            // When clicked, toggle night mode on or off
+            nightMode.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.documentElement.classList.toggle('night-mode');
+                if (document.documentElement.classList.contains('night-mode')) {
+                    localStorage.setItem('gmtNightMode', true);
+                    return;
+                }
+                localStorage.removeItem('gmtNightMode');
+            }, false);
+
+        })(window, document);
+    </script>
+ 
+ 
+
+    <!-- javaScripts
+    ================================================== -->
+    <script src="../assets/js/framework.js"></script>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/simplebar.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/bootstrap-select.min.js"></script>
+
+
+</body>
+
+</html>

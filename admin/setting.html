@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Capacita Tech | General</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link href="../assets/images/favicon.ico" rel="icon" type="image/ico">
+
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/night-mode.css">
+    <link rel="stylesheet" href="../assets/css/framework.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/icons.css">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="admin-panel">
+
+        <!-- menu -->
+        <div class="page-menu">
+            <!-- btn close on small devices -->
+            <span class="btn-menu-close" uk-toggle="target: #wrapper ; cls: mobile-active"></span>
+            <!-- traiger btn -->
+            <span class="btn-menu-trigger" uk-toggle="target: .page-menu ; cls: menu-large"></span>
+
+            <!-- logo -->
+            <div class="logo uk-visible@s">
+                <a href="dashboard.html"> <i class=" uil-graduation-hat"></i> <span> Capacita Tech</span> </a>
+            </div>
+            <div class="page-menu-inner" data-simplebar>
+                <ul class="mt-0">
+                    <li><a href="dashboard.html"><i class="uil-home-alt"></i> <span> Dashboard</span></a> </li>
+                    <li><a href="courses.html"><i class="uil-youtube-alt"></i> <span> Cursos</span></a> </li>
+                    <li><a href="messages.html"><i class="uil-envelope-alt"></i> <span> Mensages</span></a> </li>
+                    <li><a href="students.html"><i class="uil-users-alt"></i> <span> Estudiantes</span></a> </li>
+                    <li><a href="instructures.html"><i class="uil-graduation-hat"></i> <span> Instructores</span></a>
+                    </li>
+                    <li><a href="catagories.html"><i class="uil-tag-alt"></i> <span> Caregorias</span></a> </li>
+                    <li><a href="#"><i class="uil-chart-line"></i> <span> Reportes</span></a> </li>
+                    <li><a href="#"><i class="uil-question-circle"></i> <span> Ayuda</span></a> </li>
+                </ul>
+
+                <ul data-submenu-title="Configuraciones">
+                    <li><a href="setting.html"><i class="uil-cog"></i> <span> General </span></a> </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- Header Container
+        ================================================== -->
+        <header class="header uk-light">
+
+            <div class="container">
+                <nav uk-navbar>
+
+                    <!-- left Side Content -->
+                    <div class="uk-navbar-left">
+
+                        <!-- menu icon -->
+                        <span class="mmenu-trigger" uk-toggle="target: #wrapper ; cls: mobile-active">
+                            <button class="hamburger hamburger--collapse" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </span>
+
+
+                        <!-- logo -->
+
+                        <div class="searchbox uk-visible@s">
+
+                            <input class="uk-search-input" type="search" placeholder="Buscar...">
+                            <button class="btn-searchbox"> </button>
+
+                        </div>
+                        <!-- Search box dropdown -->
+                        <div uk-dropdown="pos: top;mode:click;animation: uk-animation-slide-bottom-small"
+                            class="dropdown-search">
+                            <div class="erh BR9 MIw"
+                                style="top: -26px;position: absolute ; left: 24px;fill: currentColor;height: 24px;pointer-events: none;color: #f5f5f5;">
+                                <svg width="22" height="22">
+                                    <path d="M0 24 L12 12 L24 24"></path>
+                                </svg></div>
+                            <!-- User menu -->
+
+                            <ul class="dropdown-search-list">
+                                <li class="list-title">
+                                    Busquedas Recientes
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Nuevos cursos</a>
+                                </li>
+                                <li><a href="#">
+                                        Crear cursos </a>
+                                </li>
+                                <li><a href="#">
+                                        Categorias </a>
+                                </li>
+                                <li> <a href="#">
+                                        Nuevos libros actualizados</a>
+                                </li>
+                                <li class="menu-divider">
+                                <li><a href="#">
+                                        Cursos sobre multimedia</a>
+                                </li>
+                                <li> <a href="#">
+                                        Cursos sobre tecnologias</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                    <!--  Right Side Content   -->
+
+                    <div class="uk-navbar-right">
+
+
+                        <div class="header-widget">
+
+
+                            <!-- profile-icon-->
+
+                            <div class="dropdown-user-details">
+                                <div class="dropdown-user-avatar">
+                                    <img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                </div>
+                                <div class="dropdown-user-name">
+                                    Juan Perez <span>Administrador</span>
+                                </div>
+                            </div>
+
+
+                            <div uk-dropdown="pos: top-right ;mode:click" class="dropdown-notifications small">
+
+                                <!-- User menu -->
+
+                                <ul class="dropdown-user-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-material-outline-dashboard"></i> Dashboard</a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-bookmark"></i> Favoritos </a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-settings"></i> Configuracions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="night-mode" class="btn-night-mode">
+                                            <i class="icon-feather-moon"></i> Modo Oscuro
+                                            <span class="btn-night-mode-switch">
+                                                <span class="uk-switch-button"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <ul class="menu-divider">
+                                        <li><a href="#">
+                                                <i class="icon-feather-help-circle"></i> Ayuda</a>
+                                        </li>
+                                        <li><a href="../index.html">
+                                                <i class="icon-feather-log-out"></i> Sing Out</a>
+                                        </li>
+                                    </ul>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- icon search-->
+                        <a class="uk-navbar-toggle uk-hidden@s"
+                            uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#">
+                            <i class="uil-search icon-small"></i>
+                        </a>
+                        <!-- User icons -->
+                        <span class="uil-user icon-small uk-hidden@s"
+                            uk-toggle="target: .header-widget ; cls: is-active">
+                            </spanc>
+
+                    </div>
+                    <!-- End Right Side Content / End -->
+
+
+                </nav>
+
+            </div>
+            <!-- container  / End -->
+
+        </header>
+
+        <!-- content -->
+        <div class="page-content">
+            <div class="page-content-inner">
+
+                <div class="d-flex">
+                    <nav id="breadcrumbs" class="mb-3">
+                        <ul>
+                            <li><a href="#"> <i class="uil-home-alt"></i> </a></li>
+                            <li><a href="#"> Configuraciones </a></li>
+                            <li>General</li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+
+                <div uk-grid>
+                    <div class="uk-width-1-4@m uk-flex-last@m">
+
+                        <nav class="responsive-tab style-3 setting-menu card"
+                            uk-sticky="top:30 ; offset:100; media:@m ;bottom:true; animation: uk-animation-slide-top">
+
+                            <ul>
+                                <li style="height: 40px;" class="uk-active"><a href="#"> <i class="uil-cog"></i> General </a></li>
+                                <li style="height: 40px;"><a href="#"> <i class="uil-user"></i> Perfil </a></li>
+                                <li style="height: 40px;"><a href="#"> <i class="uil-unlock-alt"></i> Contraseña </a></li>
+                                <li style="height: 40px;"><a href="#"> <i class="uil-shield-check"></i> Seguridad</a></li>
+                                <li style="height: 40px;"><a href="#"> <i class="uil-history"></i> Sesiones</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                    <div class="uk-width-2-3@m">
+
+                        <div class="card rounded">
+                            <div class="p-3">
+                                <h5 class="mb-0"> Informacion </h5>
+                            </div>
+                            <hr class="m-0">
+                            <form class="uk-child-width-1-2@s uk-grid-small p-4" uk-grid>
+                                <div>
+                                    <h5 class="uk-text-bold mb-2"> Nombre </h5>
+                                    <input type="text" class="uk-input" placeholder="Su nombre">
+                                </div>
+                                <div>
+                                    <h5 class="uk-text-bold mb-2"> Apellido </h5>
+                                    <input type="text" class="uk-input" placeholder="Su apellido">
+                                </div>
+                                <div>
+                                    <h5 class="uk-text-bold mb-2"> Correo electronico </h5>
+                                    <input type="text" class="uk-input" placeholder="example@gmail.com">
+                                </div>
+                                <div>
+                                    <h5 class="uk-text-bold mb-2"> Telefono </h5>
+                                    <input type="text" class="uk-input" placeholder="999 9999">
+                                </div>
+                            </form>
+
+                            <div class="uk-flex uk-flex-right p-4">
+                                <button class="btn btn-default">Guardar cambios</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+                <!-- footer
+                ================================================== -->
+
+            </div>
+
+        </div>
+
+        <!-- For Night mode -->
+        <script>
+            (function (window, document, undefined) {
+                'use strict';
+                if (!('localStorage' in window)) return;
+                var nightMode = localStorage.getItem('gmtNightMode');
+                if (nightMode) {
+                    document.documentElement.className += ' night-mode';
+                }
+            })(window, document);
+
+
+            (function (window, document, undefined) {
+
+                'use strict';
+
+                // Feature test
+                if (!('localStorage' in window)) return;
+
+                // Get our newly insert toggle
+                var nightMode = document.querySelector('#night-mode');
+                if (!nightMode) return;
+
+                // When clicked, toggle night mode on or off
+                nightMode.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    document.documentElement.classList.toggle('night-mode');
+                    if (document.documentElement.classList.contains('night-mode')) {
+                        localStorage.setItem('gmtNightMode', true);
+                        return;
+                    }
+                    localStorage.removeItem('gmtNightMode');
+                }, false);
+
+            })(window, document);
+        </script>
+
+
+        <!-- javaScripts
+    ================================================== -->
+        <script src="../assets/js/framework.js"></script>
+        <script src="../assets/js/jquery-3.3.1.min.js"></script>
+        <script src="../assets/js/simplebar.js"></script>
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/bootstrap-select.min.js"></script>
+
+
+
+</body>
+
+</html>

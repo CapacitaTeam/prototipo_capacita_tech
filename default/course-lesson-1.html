@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Capacita Tech | Curso</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link href="../assets/images/favicon.ico" rel="icon" type="image/ico">
+
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/night-mode.css">
+    <link rel="stylesheet" href="../assets/css/framework.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css"> 
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/icons.css">
+
+ 
+</head>
+
+
+<body class="course-watch-page">
+
+    <div class="side-nav uk-animation-slide-left-medium">
+
+        <div class="side-nav-bg"></div>
+
+        <!-- logo -->
+        <div class="logo uk-visible@s">
+            <a href="dashboard.html">
+                <img src="../assets/images/logo_without_text.svg" alt="">
+            </a>
+        </div>
+
+        <ul>
+            <li>
+                <a href="#"> <i class="uil-play-circle"></i> </a>
+                <div class="side-menu-slide">
+                    <div class="side-menu-slide-content">
+                        <ul data-simplebar>
+                            <li>
+                                <a href="courses.html"> <i class="uil-brush-alt "></i> Sitios Web </a>
+                            </li>
+                            <li>
+                                <a href="courses.html"> <i class="uil-android-alt"></i>Applicacione </a>
+                            </li>
+                            <li>
+                                <a href="courses.html"> <i class="uil-bag-alt"></i> Negocios </a>
+                            </li>
+                            <li>
+                                <a href="courses.html"> <i class="uil-window"></i> Tecnologia </a>
+                            </li>
+                            <li>
+                                <a href="courses.html"> <i class="uil-palette"></i> Diseños </a>
+                            </li>
+                            <li>
+                                <a href="courses.html"> <i class="uil-megaphone"></i> Publicidad </a>
+                            </li>
+                            <li>
+                                <a href="courses.html"> <i class="uil-life-ring"></i> Estilo de vida </a>
+                            </li>
+                            <li>
+                                <a href="courses.html"> <i class=" uil-camera"></i> Forografia </a>
+                            </li>
+                            <li>
+                                <a href="courses.html"> <i class="uil-medkit"></i> Salud </a>
+                            </li>
+                            <li>
+                                <a href="courses.html"> <i class="uil-music"></i> Musica </a>
+                            </li>
+                            <li>
+                                <a href="courses.html"> <i class="uil-shopping-cart-alt"></i> Ecommerce
+                                </a>
+                            </li>
+                            <li>
+                                <a href="courses.html"> <i class="uil-utensils-alt "></i> Comida </a>
+                            </li>
+                            <li>
+                                <a href="courses.html"> <i class="uil-lightbulb-alt"></i> Enseñansa </a>
+                            </li>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <!-- book -->
+                <a href="book.html"> <i class="uil-book-alt"></i> <span class="tooltips"> Libros</span> </a>
+            </li>
+            <li>
+                <!-- Episodes -->
+                <a href="episode.html"> <i class="uil-youtube-alt"></i> <span class="tooltips"> Episodios</span></a>
+            </li>
+
+        </ul>
+        <ul class="uk-position-bottom">
+            <li>
+                <!-- Lunch information box -->
+                <a href="#">
+                    <i class="uil-paint-tool"></i>
+                </a>
+                <div uk-drop="pos: right-bottom ;mode:click ; offset: 10;animation: uk-animation-slide-right-small">
+                    <div class="uk-card-default rounded p-0">
+                        <h5 class="mb-0 p-3 px-4  bg-light"> Modo Oscuro</h5>
+                        <div class="p-3 px-4">
+                            <p> Deslice el interruptor para cambiar entre apariencias</p>
+                            <div class="uk-flex">
+                                <p class="uk-text-small text-muted">Tema Oscuro</p>
+                                <!-- night mode button -->
+                                <span href="#" id="night-mode" class="btn-night-mode">
+                                    <label class="btn-night-mode-switch">
+                                        <span class="uk-switch-button"></span>
+                                    </label>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+
+        <!-- Wrapper -->
+        <div id="wrapper" style="margin-left: 70px;">
+
+            <div class="course-layouts">
+
+                <div class="course-content bg-dark">
+
+                    <div class="course-header">
+                        
+                        <a href="#" class="btn-back" uk-toggle="target: .course-layouts; cls: course-sidebar-collapse">
+                            <i class="icon-feather-chevron-left"></i>
+                        </a>
+
+                        <h4 class="text-white"> Construccion de sitios web </h4>
+
+                        <div>
+                            <a href="#">
+                                <i class="icon-feather-help-circle btns"></i> </a>
+                            <div uk-drop="pos: bottom-right;mode : click">
+                                <div class="uk-card-default p-4">
+                                    <h4>Ayuda</h4>
+                                    <p class="mt-2 mb-0">Contenido a la izquierda de su pantalla.</p>
+                                </div>
+                            </div>
+
+                            <a hred="#">
+                                <i class="icon-feather-more-vertical btns"></i>
+                            </a>
+                            <div class="dropdown-option-nav " uk-dropdown="pos: bottom-right ;mode : click">
+                                <ul>
+
+                                    <li><a href="#">
+                                            <i class="icon-feather-bookmark"></i>
+                                            Agregar a favoritos</a></li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-share-2"></i>
+                                            Compartir con amigos </a></li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="course-content-inner">
+
+                        <ul id="video-slider" class="uk-switcher">
+
+
+                            <li>
+                                <!-- to autoplay video uk-video="automute: true" -->
+                                <div class="video-responsive">
+                                    <iframe src="https://www.youtube.com/embed/9gTw2EDkaDQ" frameborder="0"
+                                        uk-video="automute: true" allowfullscreen uk-responsive></iframe>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="video-responsive">
+                                    <iframe src="https://www.youtube.com/embed/YcApt9RgiT0" frameborder="0"
+                                        allowfullscreen></iframe>
+                                </div>
+
+                            </li>
+                            <li>
+                                <div class="video-responsive">
+                                    <iframe src="https://www.youtube.com/embed/CGSdK7FI9MY" frameborder="0"
+                                        allowfullscreen uk-responsive></iframe>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="video-responsive">
+                                    <iframe src="https://www.youtube.com/embed/4I1WgJz_lmA" frameborder="0"
+                                        allowfullscreen uk-responsive></iframe>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="video-responsive">
+                                    <iframe src="https://www.youtube.com/embed/dDn9uw7N9Xg" frameborder="0"
+                                        allowfullscreen uk-responsive></iframe>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="video-responsive">
+                                    <iframe src="https://www.youtube.com/embed/CPcS4HtrUEU" frameborder="0"
+                                        allowfullscreen uk-responsive></iframe>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- course sidebar -->
+
+                <div class="course-sidebar">
+                    <div class="course-sidebar-title">
+                        <h3> Tabla de contenido </h3>
+                    </div>
+                    <div class="course-sidebar-container" data-simplebar>
+
+                        <ul class="course-video-list-section" uk-accordion>
+
+                            <li>
+                                <a class="uk-accordion-title" href="#"> Iniciando con HTML5 </a>
+                                <div class="uk-accordion-content">
+                                    <!-- course-video-list -->
+                                    <ul class="course-video-list highlight-watched">
+                                        <li class="watched"> <a href="#"> Que es HTML? <span> 2 min </span> </a> </li>
+                                        <li class="watched"> <a href="#"> Introduccion a HTML5 <span> 3 min </span>
+                                            </a>
+                                        </li>
+                                        <li class="watched"> <a href="#"> Obteniendo navegador <span> 5 min </span> </a>
+                                        </li>
+                                        <li class="watched"> <a href="#"> Configurando editor <span> 2 min </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="uk-open">
+                                <a class="uk-accordion-title" href="#"> Tu primera pagina </a>
+                                <div class="uk-accordion-content">
+                                    <!-- course-video-list -->
+                                    <ul class="course-video-list highlight-watched"
+                                        uk-switcher=" connect: #video-slider  ; animation: uk-animation-slide-right-small, uk-animation-slide-left-medium">
+                                        <li class="watched"> <a href="#"> Creando tu primera pagina <span> 23 min </span> </a>
+                                        </li>
+                                        <li> <a href="#"> Cabeceras HTML <span> 23 min </span> </a> </li>
+                                        <li> <a href="#"> Etiquetas <span> 23 min </span> </a> </li>
+                                        <li> <a href="#"> Formato de texto <span> 23 min </span> </a> </li>
+                                        <li> <a href="#"> Trabajando con imagenes <span> 23 min </span> </a> </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#"> Algunas Etiquetas Especiales </a>
+                                <div class="uk-accordion-content">
+                                    <!-- course-video-list -->
+                                    <ul class="course-video-list">
+                                        <li> <a href="course-lesson-1.html"> Imagenes <span> 23 min </span> </a> </li>
+                                        <li> <a href="course-lesson-1.html"> Listas <span> 23 min </span> </a> </li>
+                                        <li> <a href="course-lesson-1.html"> Reglas <span> 23 min </span> </a> </li>
+                                        <li> <a href="course-lesson-1.html"> Validacion <span> 23 min </span> </a> </li>
+                                        <li> <a href="course-lesson-1.html"> Comentarios <span> 23 min </span> </a> </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="uk-accordion-title" href="#"> Nivel Avanzado </a>
+                                <div class="uk-accordion-content">
+
+                                    <!-- course-video-list -->
+                                    <ul class="course-video-list">
+                                        <li> <a href="course-lesson-1.html"> Formulario basicos<span> 23 min </span> </a> </li>
+                                        <li> <a href="course-lesson-1.html"> Enlaces <span> 23 min </span> </a> </li>
+                                        <li> <a href="course-lesson-1.html"> Iframes <span> 23 min </span> </a> </li>
+                                        <li> <a href="course-lesson-1.html"> El fin <span> 23 min </span> </a> </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+        <script>
+            (function (window, document, undefined) {
+                'use strict';
+                if (!('localStorage' in window)) return;
+                var nightMode = localStorage.getItem('gmtNightMode');
+                if (nightMode) {
+                    document.documentElement.className += ' night-mode';
+                }
+            })(window, document);
+
+
+            (function (window, document, undefined) {
+
+                'use strict';
+
+                // Feature test
+                if (!('localStorage' in window)) return;
+
+                // Get our newly insert toggle
+                var nightMode = document.querySelector('#night-mode');
+                if (!nightMode) return;
+
+                // When clicked, toggle night mode on or off
+                nightMode.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    document.documentElement.classList.toggle('night-mode');
+                    if (document.documentElement.classList.contains('night-mode')) {
+                        localStorage.setItem('gmtNightMode', true);
+                        return;
+                    }
+                    localStorage.removeItem('gmtNightMode');
+                }, false);
+
+            })(window, document);
+        </script>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+            function make_button_active(tab) {
+                //Get item siblings
+                var siblings = tab.siblings();
+
+                /* Remove active class on all buttons
+                siblings.each(function(){
+                    $(this).removeClass('active');
+                }) */
+
+                //Add the clicked button class
+                tab.addClass('watched');
+            }
+
+            //Attach events to highlight-watched
+            $(document).ready(function () {
+
+                if (localStorage) {
+                    var ind = localStorage['tab']
+                    make_button_active($('.highlight-watched li').eq(ind));
+                }
+
+                $(".highlight-watched li").click(function () {
+                    if (localStorage) {
+                        localStorage['tab'] = $(this).index();
+                    }
+                    make_button_active($(this));
+                });
+
+            });
+        </script>
+
+    <!-- javaScripts
+    ================================================== -->
+    <script src="../assets/js/framework.js"></script>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/simplebar.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/bootstrap-select.min.js"></script>
+
+
+</body>
+
+</html>

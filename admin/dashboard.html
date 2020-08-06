@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Capacita Tech | Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link href="../assets/images/favicon.ico" rel="icon" type="image/ico">
+
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/night-mode.css">
+    <link rel="stylesheet" href="../assets/css/framework.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/icons.css">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="admin-panel">
+
+        <!-- menu -->
+        <div class="page-menu">
+            <!-- btn close on small devices -->
+            <span class="btn-menu-close" uk-toggle="target: #wrapper ; cls: mobile-active"></span>
+            <!-- traiger btn -->
+            <span class="btn-menu-trigger" uk-toggle="target: .page-menu ; cls: menu-large"></span>
+
+            <!-- logo -->
+            <div class="logo uk-visible@s">
+                <a href="dashboard.html"> <i class=" uil-graduation-hat"></i> <span> Capacita Tech</span> </a>
+            </div>
+            <div class="page-menu-inner" data-simplebar>
+                <ul class="mt-0">
+                    <li><a href="dashboard.html"><i class="uil-home-alt"></i> <span> Dashboard</span></a> </li>
+                    <li><a href="courses.html"><i class="uil-youtube-alt"></i> <span> Cursos</span></a> </li>
+                    <li><a href="messages.html"><i class="uil-envelope-alt"></i> <span> Mensages</span></a> </li>
+                    <li><a href="students.html"><i class="uil-users-alt"></i> <span> Estudiantes</span></a> </li>
+                    <li><a href="instructures.html"><i class="uil-graduation-hat"></i> <span> Instructores</span></a>
+                    </li>
+                    <li><a href="catagories.html"><i class="uil-tag-alt"></i> <span> Caregorias</span></a> </li>
+                    <li><a href="#"><i class="uil-chart-line"></i> <span> Reportes</span></a> </li>
+                    <li><a href="#"><i class="uil-question-circle"></i> <span> Ayuda</span></a> </li>
+                </ul>
+
+                <ul data-submenu-title="Configuraciones">
+                    <li><a href="setting.html"><i class="uil-cog"></i> <span> General </span></a> </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- Header Container
+        ================================================== -->
+        <header class="header uk-light">
+
+            <div class="container">
+                <nav uk-navbar>
+
+                    <!-- left Side Content -->
+                    <div class="uk-navbar-left">
+
+                        <!-- menu icon -->
+                        <span class="mmenu-trigger" uk-toggle="target: #wrapper ; cls: mobile-active">
+                            <button class="hamburger hamburger--collapse" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </span>
+
+
+                        <!-- logo -->
+
+                        <div class="searchbox uk-visible@s">
+
+                            <input class="uk-search-input" type="search" placeholder="Buscar...">
+                            <button class="btn-searchbox"> </button>
+
+                        </div>
+                        <!-- Search box dropdown -->
+                        <div uk-dropdown="pos: top;mode:click;animation: uk-animation-slide-bottom-small"
+                            class="dropdown-search">
+                            <div class="erh BR9 MIw"
+                                style="top: -26px;position: absolute ; left: 24px;fill: currentColor;height: 24px;pointer-events: none;color: #f5f5f5;">
+                                <svg width="22" height="22">
+                                    <path d="M0 24 L12 12 L24 24"></path>
+                                </svg></div>
+                            <!-- User menu -->
+
+                            <ul class="dropdown-search-list">
+                                <li class="list-title">
+                                    Busquedas Recientes
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Nuevos cursos</a>
+                                </li>
+                                <li><a href="#">
+                                        Crear cursos </a>
+                                </li>
+                                <li><a href="#">
+                                        Categorias </a>
+                                </li>
+                                <li> <a href="#">
+                                        Nuevos libros actualizados</a>
+                                </li>
+                                <li class="menu-divider">
+                                <li><a href="#">
+                                        Cursos sobre multimedia</a>
+                                </li>
+                                <li> <a href="#">
+                                        Cursos sobre tecnologias</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                    <!--  Right Side Content   -->
+
+                    <div class="uk-navbar-right">
+
+
+                        <div class="header-widget">
+
+
+                            <!-- profile-icon-->
+
+                            <div class="dropdown-user-details">
+                                <div class="dropdown-user-avatar">
+                                    <img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                </div>
+                                <div class="dropdown-user-name">
+                                    Juan Perez <span>Administrador</span>
+                                </div>
+                            </div>
+
+
+                            <div uk-dropdown="pos: top-right ;mode:click" class="dropdown-notifications small">
+
+                                <!-- User menu -->
+
+                                <ul class="dropdown-user-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-material-outline-dashboard"></i> Dashboard</a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-bookmark"></i> Favoritos </a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-settings"></i> Configuracions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="night-mode" class="btn-night-mode">
+                                            <i class="icon-feather-moon"></i> Modo Oscuro
+                                            <span class="btn-night-mode-switch">
+                                                <span class="uk-switch-button"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <ul class="menu-divider">
+                                        <li><a href="#">
+                                                <i class="icon-feather-help-circle"></i> Ayuda</a>
+                                        </li>
+                                        <li><a href="../index.html">
+                                                <i class="icon-feather-log-out"></i> Sing Out</a>
+                                        </li>
+                                    </ul>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- icon search-->
+                        <a class="uk-navbar-toggle uk-hidden@s"
+                            uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#">
+                            <i class="uil-search icon-small"></i>
+                        </a>
+                        <!-- User icons -->
+                        <span class="uil-user icon-small uk-hidden@s"
+                            uk-toggle="target: .header-widget ; cls: is-active">
+                            </spanc>
+
+                    </div>
+                    <!-- End Right Side Content / End -->
+
+
+                </nav>
+
+            </div>
+            <!-- container  / End -->
+
+        </header>
+
+        <!-- content -->
+        <div class="page-content">
+            <div class="page-content-inner pt-lg-0  pr-lg-0">
+
+
+
+                <div class="ro" uk-grid>
+                    <div class="uk-width-expand@m">
+
+
+                        <div class="section-small">
+
+                            <h3> ¡Bienvenido, Juan! </h3>
+
+                            <div class="uk-position-relative uk-visible-toggle " tabindex="-1" uk-slider="finite: true">
+
+                                <ul class="uk-slider-items uk-child-width-1-2@m uk-child-width-1-2@s uk-grid">
+
+                                    <li>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="uk-flex-middle" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <h5 class="mb-2"> Cursos </h5>
+                                                        <h1> 220</h1>
+                                                        <span class="badge badge-soft-success mt-n1"> +12</span>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <img src="../assets/images/demos/admin/d-graduation.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-footer d-flex justify-content-between py-2">
+                                                <p class="mb-0"> 124 Nuevos Cursos </p>
+                                                <a href="#" class=" "> Ver reporte</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="uk-flex-middle" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <h5 class="mb-2"> Estudiantes </h5>
+                                                        <h1> 2,900</h1>
+                                                        <span class="badge badge-soft-primary mt-n1"> +56.6%</span>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <img src="../assets/images/demos/admin/d-student.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-footer d-flex justify-content-between py-2">
+                                                <p class="mb-0"> 120 Nuevos estudiantes </p>
+                                                <a href="#" class=" "> Ver reporte</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="uk-flex-middle" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <h5 class="mb-2"> Instructores </h5>
+                                                        <h1> 30</h1>
+                                                        <span class="badge badge-soft-success mt-n1"> +16%</span>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <img src="../assets/images/demos/admin/d-instructor.svg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card-footer d-flex justify-content-between py-2">
+                                                <p class="mb-0"> 10 Nuevos instructores </p>
+                                                <a href="#" class=" "> Ver reporte</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+
+                                <ul class="uk-slider-nav uk-dotnav uk-flex-center mt-3"></ul>
+
+                            </div>
+
+                            <div class="uk-child-width-1-2@m" uk-grid>
+
+                                <div>
+
+                                </div>
+
+                                <div>
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="uk-card-default uk-card-small rounded">
+                            <div class="uk-card-header py-3">
+                                <span class="uk-h5"> Cursos recientes</span>
+                                <a href="courses.html" class="uk-float-right"> Ver todo </a>
+                            </div>
+
+                            <div class="uk-height-large" data-simplebar>
+
+                                <div class="uk-grid-small p-4" uk-grid>
+                                    <div class="uk-width-1-3@m">
+                                        <img src="../assets/images/course/teach2.jpg" class="  rounded" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h5 class="mb-2"> Aprende nuevas tecnicas </h5>
+                                        <p class="uk-text-small mb-2">Creado por <a href="#"> Maria Morales </a>
+                                        </p>
+                                        <p class="mb-0 uk-text-small mt-3">
+                                            <span class="mr-3 bg-light p-2 mt-1"> 16 Capitulos</span><span> Ultima actualizacion
+                                                06/2020 </span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <hr class="m-0">
+
+                                <div class="uk-grid-small p-4" uk-grid>
+                                    <div class="uk-width-1-3@m">
+                                        <img src="../assets/images/course/diseno.jpg" class="  rounded" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h5 class="mb-2"> Publicidad </h5>
+                                        <p class="uk-text-small mb-2"> Creado por <a href="#"> Jonathan Madano </a>
+                                        </p>
+                                        <p class="mb-0 uk-text-small mt-3">
+                                            <span class="mr-3 bg-light p-2 mt-1"> 6 Capitulos</span><span> Ultima actualizacion
+                                                05/2020 </span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <hr class="m-0">
+
+
+                                <div class="uk-grid-small p-4" uk-grid>
+                                    <div class="uk-width-1-3@m">
+                                        <img src="../assets/images/course/chef-cocina.jpg" class="  rounded" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h5 class="mb-2"> Tecnicas para cocinar </h5>
+                                        <p class="uk-text-small mb-2"> Creado por <a href="#"> Martha Hernandez </a>
+                                        </p>
+                                        <p class="mb-0 uk-text-small mt-3">
+                                            <span class="mr-3 bg-light p-2 mt-1"> 11 Capitulos</span><span> Ultima actualizacion
+                                                01/2020 </span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <hr class="m-0">
+
+
+                                <div class="uk-grid-small p-4" uk-grid>
+                                    <div class="uk-width-1-3@m">
+                                        <img src="../assets/images/course/eT.jpg" class="  rounded" alt="">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h5 class="mb-2"> Tips tecnologicos </h5>
+                                        <p class="uk-text-small mb-2"> Creado por<a href="#"> Jonathan Madano </a>
+                                        </p>
+                                        <p class="mb-0 uk-text-small mt-3">
+                                            <span class="mr-3 bg-light p-2 mt-1"> 16 Capitulos</span><span> Ultima actualizacion
+                                                02/2020 </span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <!-- Popular Instructers -->
+                        <div class="section-small">
+
+                            <div class="uk-position-relative uk-visible-toggle " tabindex="-1" uk-slider="finite: true">
+
+                                <div class="grid-slider-header">
+                                    <h4> Instructores populares </h4>
+                                    <div class="grid-slider-header-link">
+
+                                        <a href="#" class="btn uk-visible@m"> Ver todos </a>
+                                        <a href="#" class="slide-nav-prev" uk-slider-item="previous"></a>
+                                        <a href="#" class="slide-nav-next" uk-slider-item="next"></a>
+
+                                    </div>
+                                </div>
+
+                                <ul class="uk-slider-items uk-child-width-1-3@m uk-child-width-1-2@s pb-3 uk-grid">
+
+                                 
+                                    <li>
+                                            <div class="card">
+
+                                                    <div class="card-body text-center">
+                                                        <div class="avatar-parent-child">
+                                                            <img alt="Image placeholder" src="../assets/images/avatars/home-profile.jpg"
+                                                                class="avatar  rounded-circle avatar-lg">
+                                                            <span class="avatar-child avatar-badge bg-success"></span>
+                                                        </div>
+                                                        <h5 class="h6 mt-4 mb-0"> Maria Morales </h5>
+                                                        <a href="#" class="d-block text-sm text-muted mb-3">@mary.morales</a>
+                            
+                                                        <div class="d-flex justify-content-between px-4">
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Editar">
+                                                                <i class="uil-edit-alt"></i> </a>
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Enviar Mensaje">
+                                                                <i class="uil-envelope"></i>
+                                                            </a>
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Borrar">
+                                                                <i class="uil-trash-alt"></i> </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer text-center py-2">
+                            
+                                                        <a href="#" class="text-muted uk-text-small"> 13 Cursos </a>
+                            
+                                                    </div>
+                            
+                                                </div>
+                            
+                                            </li>
+                                            <li>
+                                                    <div class="card">
+                                                    <div class="card-body text-center">
+                                                        <div class="avatar-parent-child">
+                                                            <img alt="Image placeholder" src="../assets/images/avatars/home-profile.jpg"
+                                                                class="avatar  rounded-circle avatar-lg">
+                                                            <span class="avatar-child avatar-badge bg-success"></span>
+                                                        </div>
+                                                        <h5 class="h6 mt-4 mb-0"> Alex Fernandez</h5>
+                                                        <a href="#" class="d-block text-sm text-muted mb-3">@Alex.Fer</a>
+                            
+                                                        <div class="d-flex justify-content-between px-4">
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Editar">
+                                                                <i class="uil-edit-alt"></i> </a>
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Enviar Mensaje">
+                                                                <i class="uil-envelope"></i>
+                                                            </a>
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Borrar">
+                                                                <i class="uil-trash-alt"></i> </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer text-center py-2">
+                            
+                                                        <a href="#" class="text-muted uk-text-small"> 21 Cursos </a>
+                            
+                                                    </div>
+                            
+                                                </div>
+                            
+                                            </li>
+                                            <li>
+                                                    <div class="card">
+                                                    <div class="card-body text-center">
+                                                        <div class="avatar-parent-child">
+                                                            <img alt="Image placeholder" src="../assets/images/avatars/home-profile.jpg"
+                                                                class="avatar  rounded-circle avatar-lg">
+                                                            <span class="avatar-child avatar-badge bg-success"></span>
+                                                        </div>
+                                                        <h5 class="h6 mt-4 mb-0">Adrian Mohani</h5>
+                                                        <a href="#" class="d-block text-sm text-muted mb-3">@Adrian.Mohani</a>
+                            
+                                                        <div class="d-flex justify-content-between px-4">
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Editar">
+                                                                <i class="uil-edit-alt"></i> </a>
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Enviar Mensaje">
+                                                                <i class="uil-envelope"></i>
+                                                            </a>
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Borrar">
+                                                                <i class="uil-trash-alt"></i> </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer text-center py-2">
+                            
+                                                        <a href="#" class="text-muted uk-text-small"> 25 Cursos </a>
+                            
+                                                    </div>
+                            
+                                                </div>
+                            
+                                            </li>
+                                            <li>
+                                                    <div class="card">
+                                                    <div class="card-body text-center">
+                                                        <div class="avatar-parent-child">
+                                                            <img alt="Image placeholder" src="../assets/images/avatars/home-profile.jpg"
+                                                                class="avatar  rounded-circle avatar-lg">
+                                                            <span class="avatar-child avatar-badge bg-success"></span>
+                                                        </div>
+                                                        <h5 class="h6 mt-4 mb-0"> Stella Johnson</h5>
+                                                        <a href="#" class="d-block text-sm text-muted mb-3">@john.Johnson</a>
+                            
+                                                        <div class="d-flex justify-content-between px-4">
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Editar">
+                                                                <i class="uil-edit-alt"></i> </a>
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Enviar Mensaje">
+                                                                <i class="uil-envelope"></i>
+                                                            </a>
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Borrar">
+                                                                <i class="uil-trash-alt"></i> </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer text-center py-2">
+                            
+                                                        <a href="#" class="text-muted uk-text-small"> 8 Cursos </a>
+                            
+                                                    </div>
+                            
+                                                </div>
+                            
+                                            </li>
+                                            <li>
+                                                    <div class="card">
+                                                    <div class="card-body text-center">
+                                                        <div class="avatar-parent-child">
+                                                            <img alt="Image placeholder" src="../assets/images/avatars/home-profile.jpg"
+                                                                class="avatar  rounded-circle avatar-lg">
+                                                            <span class="avatar-child avatar-badge bg-success"></span>
+                                                        </div>
+                                                        <h5 class="h6 mt-4 mb-0"> Richard Ali </h5>
+                                                        <a href="#" class="d-block text-sm text-muted mb-3">@Richard.Ali</a>
+                            
+                                                        <div class="d-flex justify-content-between px-4">
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Editar">
+                                                                <i class="uil-edit-alt"></i> </a>
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Enviar Mensaje">
+                                                                <i class="uil-envelope"></i>
+                                                            </a>
+                                                            <a href="#" class="btn btn-icon btn-hover btn-circle" uk-tooltip="Borrar">
+                                                                <i class="uil-trash-alt"></i> </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-footer text-center py-2">
+                            
+                                                        <a href="#" class="text-muted uk-text-small"> 13 Cursos </a>
+                            
+                                                    </div>
+                            
+                                                </div>
+                            
+                                        </li>
+                                    
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="uk-width-1-3@m">
+
+                        <div class="bg-white uk-card-default uk-height-1-1" data-simplebar
+                            uk-sticky="offset:70; bottom:true">
+                            <div class="p-3 row align-items-center">
+
+                                <div class="col-auto">
+                                 <p class="mb-0"> Mostrar datos</p>
+
+                                </div>
+                                <div class="col">
+
+                                <select class="selectpicker">
+                                    <option value=""> Hoy </option>
+                                    <option value="1"> Esta semana </option>
+                                    <option value="2"> Semana pasada</option>
+                                </select>
+
+
+                            </div>
+                            </div>
+
+                            <hr class="m-0">
+
+                            <div class="p-3">
+                                <h5> Total de vistas</h5>
+                                <h2> 8,303</h2>
+                                <canvas id="cjs-linechart"></canvas>
+                            </div>
+
+                            <hr class="m-0">
+
+                            <div class="p-3">
+                                <h5> Ultimas vistas</h5>
+
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto"> <img class="rounded border border-200"
+                                            src="../assets/images/course/chef-cocina.jpg" width="60" alt=""> </div>
+                                    <div class="uk-width-expand">
+                                        <p class="uk-text-truncate mb-0"> Cocina</p>
+                                    </div>
+                                    <div class="uk-width-auto"> <span class="badge badge-soft-success mt-n1">
+                                            1,232</span>
+                                    </div>
+                                </div>
+
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto"> <img class="rounded border border-200"
+                                            src="../assets/images/course/goodpractice.jpg" width="60" alt=""> </div>
+                                    <div class="uk-width-expand">
+                                        <p class="uk-text-truncate mb-0"> Buenas practicas</p>
+                                    </div>
+                                    <div class="uk-width-auto"> <span class="badge badge-soft-success mt-n1">
+                                            129</span>
+                                    </div>
+                                </div>
+
+                                <div class="uk-grid-small  uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto"> <img class="rounded border border-200"
+                                            src="../assets/images/course/logotipo.jpg" width="60" alt=""> </div>
+                                    <div class="uk-width-expand">
+                                        <p class="uk-text-small uk-text-truncate mb-0"> Multimedia</p>
+                                    </div>
+                                    <div class="uk-width-auto"> <span class="badge badge-soft-success mt-n1">
+                                            2,598</span>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <a href="#">
+                                    <p class="uk-heading-line uk-text-center mt-2 uk-text-small"><span>  Ver mas
+                                        </span>
+                                    </p>
+                                </a>
+
+
+                                <h5> Top Vistas</h5>
+
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto"> <img class="rounded border border-200"
+                                            src="../assets/images/course/goodpractice.jpg" width="80" alt=""> </div>
+                                    <div class="uk-width-expand">
+                                        <p class="uk-text-truncate mb-0"> Crecimiento profesional</p>
+                                        <span class="badge badge-soft-secondary mt-n1"> 323 vistas</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto"> <img class="rounded border border-200"
+                                            src="../assets/images/course/diseno.jpg" width="80" alt=""> </div>
+                                    <div class="uk-width-expand">
+                                        <p class="uk-text-truncate mb-0"> Publicidad</p>
+                                        <span class="badge badge-soft-secondary mt-n1"> 500 vistas</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="uk-grid-small  uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto"> <img class="rounded border border-200"
+                                            src="../assets/images/course/beneficios-de-las-tic.jpg" width="60" alt=""> </div>
+                                    <div class="uk-width-expand">
+                                        <p class="uk-text-small uk-text-truncate mb-0"> Redes Sociales</p>
+                                    </div>
+                                    <div class="uk-width-auto"> <span class="badge badge-soft-secondary mt-n1"> 143
+                                            vistas</span>
+                                    </div>
+                                </div>
+
+
+
+
+
+                                <a href="#">
+                                    <p class="uk-heading-line uk-text-center mt-2 uk-text-small"><span> Ver mas
+                                        </span>
+                                    </p>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- footer
+                ================================================== -->
+                
+
+            </div>
+
+        </div>
+
+        <!-- For Night mode -->
+        <script>
+            (function (window, document, undefined) {
+                'use strict';
+                if (!('localStorage' in window)) return;
+                var nightMode = localStorage.getItem('gmtNightMode');
+                if (nightMode) {
+                    document.documentElement.className += ' night-mode';
+                }
+            })(window, document);
+
+
+            (function (window, document, undefined) {
+
+                'use strict';
+
+                // Feature test
+                if (!('localStorage' in window)) return;
+
+                // Get our newly insert toggle
+                var nightMode = document.querySelector('#night-mode');
+                if (!nightMode) return;
+
+                // When clicked, toggle night mode on or off
+                nightMode.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    document.documentElement.classList.toggle('night-mode');
+                    if (document.documentElement.classList.contains('night-mode')) {
+                        localStorage.setItem('gmtNightMode', true);
+                        return;
+                    }
+                    localStorage.removeItem('gmtNightMode');
+                }, false);
+
+            })(window, document);
+        </script>
+
+
+
+        <!-- javaScripts
+    ================================================== -->
+        <script src="../assets/js/framework.js"></script>
+        <script src="../assets/js/jquery-3.3.1.min.js"></script>
+        <script src="../assets/js/simplebar.js"></script>
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/bootstrap-select.min.js"></script>
+
+        <script src="../assets/js/chart.min.js"></script>
+        <script src="../assets/js/chart-custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <title>Capacita Tech | Mensages</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link href="../assets/images/favicon.ico" rel="icon" type="image/ico">
+
+    <!-- CSS 
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/night-mode.css">
+    <link rel="stylesheet" href="../assets/css/framework.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+
+    <!-- icons
+    ================================================== -->
+    <link rel="stylesheet" href="../assets/css/icons.css">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="admin-panel">
+
+        <!-- menu -->
+        <div class="page-menu">
+            <!-- btn close on small devices -->
+            <span class="btn-menu-close" uk-toggle="target: #wrapper ; cls: mobile-active"></span>
+            <!-- traiger btn -->
+            <span class="btn-menu-trigger" uk-toggle="target: .page-menu ; cls: menu-large"></span>
+
+            <!-- logo -->
+            <div class="logo uk-visible@s">
+                <a href="dashboard.html"> <i class=" uil-graduation-hat"></i> <span> Capacita Tech</span> </a>
+            </div>
+            <div class="page-menu-inner" data-simplebar>
+                <ul class="mt-0">
+                    <li><a href="dashboard.html"><i class="uil-home-alt"></i> <span> Dashboard</span></a> </li>
+                    <li><a href="courses.html"><i class="uil-youtube-alt"></i> <span> Cursos</span></a> </li>
+                    <li><a href="messages.html"><i class="uil-envelope-alt"></i> <span> Mensages</span></a> </li>
+                    <li><a href="students.html"><i class="uil-users-alt"></i> <span> Estudiantes</span></a> </li>
+                    <li><a href="instructures.html"><i class="uil-graduation-hat"></i> <span> Instructores</span></a>
+                    </li>
+                    <li><a href="catagories.html"><i class="uil-tag-alt"></i> <span> Caregorias</span></a> </li>
+                    <li><a href="#"><i class="uil-chart-line"></i> <span> Reportes</span></a> </li>
+                    <li><a href="#"><i class="uil-question-circle"></i> <span> Ayuda</span></a> </li>
+                </ul>
+
+                <ul data-submenu-title="Configuraciones">
+                    <li><a href="setting.html"><i class="uil-cog"></i> <span> General </span></a> </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- Header Container
+        ================================================== -->
+        <header class="header uk-light">
+
+            <div class="container">
+                <nav uk-navbar>
+
+                    <!-- left Side Content -->
+                    <div class="uk-navbar-left">
+
+                        <!-- menu icon -->
+                        <span class="mmenu-trigger" uk-toggle="target: #wrapper ; cls: mobile-active">
+                            <button class="hamburger hamburger--collapse" type="button">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </span>
+
+
+                        <!-- logo -->
+
+                        <div class="searchbox uk-visible@s">
+
+                            <input class="uk-search-input" type="search" placeholder="Buscar...">
+                            <button class="btn-searchbox"> </button>
+
+                        </div>
+                        <!-- Search box dropdown -->
+                        <div uk-dropdown="pos: top;mode:click;animation: uk-animation-slide-bottom-small"
+                            class="dropdown-search">
+                            <div class="erh BR9 MIw"
+                                style="top: -26px;position: absolute ; left: 24px;fill: currentColor;height: 24px;pointer-events: none;color: #f5f5f5;">
+                                <svg width="22" height="22">
+                                    <path d="M0 24 L12 12 L24 24"></path>
+                                </svg></div>
+                            <!-- User menu -->
+
+                            <ul class="dropdown-search-list">
+                                <li class="list-title">
+                                    Busquedas Recientes
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Nuevos cursos</a>
+                                </li>
+                                <li><a href="#">
+                                        Crear cursos </a>
+                                </li>
+                                <li><a href="#">
+                                        Categorias </a>
+                                </li>
+                                <li> <a href="#">
+                                        Nuevos libros actualizados</a>
+                                </li>
+                                <li class="menu-divider">
+                                <li><a href="#">
+                                        Cursos sobre multimedia</a>
+                                </li>
+                                <li> <a href="#">
+                                        Cursos sobre tecnologias</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                    <!--  Right Side Content   -->
+
+                    <div class="uk-navbar-right">
+
+
+                        <div class="header-widget">
+
+
+                            <!-- profile-icon-->
+
+                            <div class="dropdown-user-details">
+                                <div class="dropdown-user-avatar">
+                                    <img src="../assets/images/avatars/home-profile.jpg" alt="">
+                                </div>
+                                <div class="dropdown-user-name">
+                                    Juan Perez <span>Administrador</span>
+                                </div>
+                            </div>
+
+
+                            <div uk-dropdown="pos: top-right ;mode:click" class="dropdown-notifications small">
+
+                                <!-- User menu -->
+
+                                <ul class="dropdown-user-menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="icon-material-outline-dashboard"></i> Dashboard</a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-bookmark"></i> Favoritos </a>
+                                    </li>
+                                    <li><a href="#">
+                                            <i class="icon-feather-settings"></i> Configuracions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" id="night-mode" class="btn-night-mode">
+                                            <i class="icon-feather-moon"></i> Modo Oscuro
+                                            <span class="btn-night-mode-switch">
+                                                <span class="uk-switch-button"></span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <ul class="menu-divider">
+                                        <li><a href="#">
+                                                <i class="icon-feather-help-circle"></i> Ayuda</a>
+                                        </li>
+                                        <li><a href="../index.html">
+                                                <i class="icon-feather-log-out"></i> Sing Out</a>
+                                        </li>
+                                    </ul>
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <!-- icon search-->
+                        <a class="uk-navbar-toggle uk-hidden@s"
+                            uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#">
+                            <i class="uil-search icon-small"></i>
+                        </a>
+                        <!-- User icons -->
+                        <span class="uil-user icon-small uk-hidden@s"
+                            uk-toggle="target: .header-widget ; cls: is-active">
+                            </spanc>
+
+                    </div>
+                    <!-- End Right Side Content / End -->
+
+
+                </nav>
+
+            </div>
+            <!-- container  / End -->
+
+        </header>
+
+        <!-- content -->
+        <div class="page-content">
+            <div class="page-content-inner">
+
+                <div class="d-flex">
+                    <nav id="breadcrumbs" class="mb-3">
+                        <ul>
+                            <li><a href="#"> <i class="uil-home-alt"></i> </a></li>
+                            <li><a href="#"> Chat </a></li>
+                            <li>Mensages</li>
+                        </ul>
+                    </nav>
+                </div>
+
+
+
+                <div class="chats-container margin-top-0">
+
+                    <div class="chats-container-inner">
+
+                        <!-- chats -->
+                        <div class="chats-inbox">
+                            <div class="chats-headline">
+                                <div class="input-with-icon">
+                                    <input id="autocomplete-input" type="text" placeholder="Buscar">
+                                    <i class="icon-material-outline-search"></i>
+                                </div>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="message-avatar"><i class="status-icon status-online"></i><img
+                                                src="../assets/images/avatars/home-profile.jpg" alt="" /></div>
+
+                                        <div class="message-by">
+                                            <div class="message-by-headline">
+                                                <h5>Jonathan Madano </h5>
+                                                <span>Hace 4 horas</span>
+                                            </div>
+                                            <p>Tu: Si, en mi organizacion</p>
+                                            <span class="message-readed uil-check"> </span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="active-message">
+                                    <a href="#">
+                                        <div class="message-avatar"><i class="status-icon status-online"></i><img
+                                                src="../assets/images/avatars/home-profile.jpg" alt="" /></div>
+
+                                        <div class="message-by">
+                                            <div class="message-by-headline">
+                                                <h5>Stella Johnson </h5>
+                                                <span>Ayer</span>
+                                            </div>
+                                            <p>Que estas haciendo?</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <div class="message-avatar"><i class="status-icon status-offline"></i><img
+                                                src="../assets/images/avatars/home-profile.jpg" alt="" /></div>
+
+                                        <div class="message-by">
+                                            <div class="message-by-headline">
+                                                <h5> Alex Dolgove</h5>
+                                                <span>Hace 2 horas</span>
+                                            </div>
+                                            <p>Hola, quiero hablar contigo</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <div class="message-avatar"><i class="status-icon status-offline"></i><img
+                                                src="../assets/images/avatars/home-profile.jpg" alt="" /></div>
+
+                                        <div class="message-by">
+                                            <div class="message-by-headline">
+                                                <h5>Marcin Kowalski</h5>
+                                                <span>Hace 1 hora</span>
+                                            </div>
+                                            <p>Hola</p>
+                                            <span class="message-readed uil-check"> </span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="active-message">
+                                    <a href="#">
+                                        <div class="message-avatar"><i class="status-icon status-online"></i><img
+                                                src="../assets/images/avatars/home-profile.jpg" alt="" /></div>
+
+                                        <div class="message-by">
+                                            <div class="message-by-headline">
+                                                <h5>Adrian Mohani</h5>
+                                                <span>Ayer</span>
+                                            </div>
+                                            <p>Como estas</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                               
+                            </ul>
+                        </div>
+                        <!-- chats / End -->
+
+                        <!-- Message Content -->
+                        <div class="message-content">
+
+                            <div class="chats-headline">
+
+                                <div class="d-flex">
+                                    <div class="avatar-parent-child">
+                                        <img alt="Image placeholder" src="../assets/images/avatars/avatar-1.jpg"
+                                            class="avatar  rounded-circle avatar-sm">
+                                        <span class="avatar-child avatar-badge bg-success"></span>
+                                    </div>
+                                    <h4 class="ml-2"> Alex Dolgove <span>En linea</span> </h4>
+                                </div>
+
+                                <div class="message-action">
+                                    <a href="#" class="btn btn-icon btn-hover  btn-circle" uk-tooltip="Mas">
+                                        <i class="uil-ellipsis-h"></i>
+                                    </a>
+                                    <div
+                                        uk-dropdown="pos: left ; mode: click ;animation: uk-animation-slide-bottom-small">
+                                        <ul class="uk-nav uk-dropdown-nav">
+                                            <li><a href="#"> Recargar </a></li>
+                                            <li><a href="#"> Administrar</a></li>
+                                            <li><a href="#"> Configuracion</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Message Content Inner -->
+                            <div class="message-content-inner">
+
+                                <!-- Time Sign -->
+                                <div class="message-time-sign">
+                                    <span>28 Junio, 2020</span>
+                                </div>
+
+                                <div class="message-bubble me">
+                                    <div class="message-bubble-inner">
+                                        <div class="message-avatar"><img src="../assets/images/avatars/home-profile.jpg"
+                                                alt="" />
+                                        </div>
+                                        <div class="message-text">
+                                            <p>Que curso me recomiendas</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="message-bubble">
+                                    <div class="message-bubble-inner">
+                                        <div class="message-avatar"><img src="../assets/images/avatars/home-profile.jpg"
+                                                alt="" />
+                                        </div>
+                                        <div class="message-text">
+                                            <p>Hola, te recomiendo uno de coscina 👍</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="message-bubble me">
+                                    <div class="message-bubble-inner">
+                                        <div class="message-avatar"><img src="../assets/images/avatars/home-profile.jpg"
+                                                alt="" />
+                                        </div>
+                                        <div class="message-text">
+                                            <p>Ok, interesante 😉</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+
+                                <!-- Time Sign -->
+                                <div class="message-time-sign">
+                                    <span>Ayer</span>
+                                </div>
+
+                                <div class="message-bubble me">
+                                    <div class="message-bubble-inner">
+                                        <div class="message-avatar"><img src="../assets/images/avatars/home-profile.jpg"
+                                                alt="" />
+                                        </div>
+                                        <div class="message-text">
+                                            <p> Ya lo inicie a ver</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="message-bubble">
+                                    <div class="message-bubble-inner">
+                                        <div class="message-avatar"><img src="../assets/images/avatars/home-profile.jpg"
+                                                alt="" />
+                                        </div>
+                                        <div class="message-text">
+                                            <p>Como lo vites, a mi me parecio genial 😎</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="message-bubble me">
+                                    <div class="message-bubble-inner">
+                                        <div class="message-avatar"><img src="../assets/images/avatars/home-profile.jpg"
+                                                alt="" />
+                                        </div>
+                                        <div class="message-text">
+                                            <p>Super bien, voy a terminarlo 🙂</p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="message-bubble">
+                                    <div class="message-bubble-inner">
+                                        <div class="message-avatar"><img src="../assets/images/avatars/home-profile.jpg"
+                                                alt="" />
+                                        </div>
+                                        <div class="message-text w-auto">
+                                            <!-- Typing Indicator -->
+                                            <div class="typing-indicator">
+                                                <span></span>
+                                                <span></span>
+                                                <span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <!-- Message Content Inner / End -->
+
+                            <!-- Reply Area -->
+                            <div class="message-reply">
+
+                                <form class="d-flex align-items-center w-100">
+                                    <div class="btn-box d-flex align-items-center mr-3">
+                                        <a href="#" class="btn btn-icon  btn-default btn-circle d-inline-block mr-2"
+                                            uk-tooltip="Emoji" title="" aria-expanded="false">
+                                            <i class="uil-smile-wink"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-icon  btn-default btn-circle d-inline-block  "
+                                            uk-tooltip="Adjuntar" title="" aria-expanded="false">
+                                            <i class="uil-link-alt"></i>
+                                        </a>
+                                    </div>
+
+                                    <textarea cols="1" rows="1" placeholder="Tu mensage" data-autoresize></textarea>
+
+                                    <button type="submit" class="send-btn d-inline-block btn btn-default">Enviar <i
+                                            class="bx bx-paper-plane"></i></button>
+                                </form>
+
+                            </div>
+
+                            <!-- 
+                        <div class="message-reply">
+                            <textarea cols="1" rows="1" placeholder="Your Message" data-autoresize></textarea>
+                            <button class="btn btn-primary ripple-effect">Send</button>
+                        </div>-->
+
+
+
+                        </div>
+                        <!-- Message Content -->
+
+                    </div>
+                </div>
+                <!-- chats Container / End -->
+
+
+
+
+                <!-- footer
+                ================================================== -->
+
+            </div>
+
+        </div>
+
+        <!-- For Night mode -->
+        <script>
+            (function (window, document, undefined) {
+                'use strict';
+                if (!('localStorage' in window)) return;
+                var nightMode = localStorage.getItem('gmtNightMode');
+                if (nightMode) {
+                    document.documentElement.className += ' night-mode';
+                }
+            })(window, document);
+
+
+            (function (window, document, undefined) {
+
+                'use strict';
+
+                // Feature test
+                if (!('localStorage' in window)) return;
+
+                // Get our newly insert toggle
+                var nightMode = document.querySelector('#night-mode');
+                if (!nightMode) return;
+
+                // When clicked, toggle night mode on or off
+                nightMode.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    document.documentElement.classList.toggle('night-mode');
+                    if (document.documentElement.classList.contains('night-mode')) {
+                        localStorage.setItem('gmtNightMode', true);
+                        return;
+                    }
+                    localStorage.removeItem('gmtNightMode');
+                }, false);
+
+            })(window, document);
+        </script>
+
+
+        <!-- javaScripts
+    ================================================== -->
+        <script src="../assets/js/framework.js"></script>
+        <script src="../assets/js/jquery-3.3.1.min.js"></script>
+        <script src="../assets/js/simplebar.js"></script>
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/bootstrap-select.min.js"></script>
+
+
+
+</body>
+
+</html>
